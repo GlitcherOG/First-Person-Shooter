@@ -32,6 +32,10 @@ public class WeaponManager : MonoBehaviour
         {
             fire = false;
         }
+        if(Input.GetKeyDown("r"))
+        {
+            Reload();
+        }
         //if (Input.GetKeyDown("1"))
         //{
         //    slotActive++;
@@ -65,20 +69,49 @@ public class WeaponManager : MonoBehaviour
 
     void Shoot()
     {
-        cooldownTimer = cooldown;
-        fire = true;
-        Vector2 RandomShot = new Vector2(Random.Range(-0.2f, 0.2f), Random.Range(-0.2f, 0.2f));
-        //New ray that points out from the camera to the mouse position
-        Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0) + new Vector3(RandomShot.x,0,RandomShot.y));
-        //Gets the hitinfo of the raycast
-        //Physics.Raycast(ray, out hit);
-        if (Physics.Raycast(ray, out hit))
+        if (active.mag > 0)
         {
-            GameObject temp = Instantiate(detail, hit.point, hit.transform.rotation);
-            if (hit.transform.tag == "Enemy")
+            active.mag--;
+            cooldownTimer = cooldown;
+            fire = true;
+            Vector2 RandomShot = new Vector2(Random.Range(-0.2f, 0.2f), Random.Range(-0.2f, 0.2f));
+            //New ray that points out from the camera to the mouse position
+            Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0) + new Vector3(RandomShot.x, 0, RandomShot.y));
+            //Gets the hitinfo of the raycast
+            //Physics.Raycast(ray, out hit);
+            if (Physics.Raycast(ray, out hit))
             {
-                hit.transform.GetComponentInParent<Enemy>().Damage(10f);
+                GameObject temp = Instantiate(detail, hit.point, hit.transform.rotation);
+                if (hit.transform.tag == "Enemy")
+                {
+                    hit.transform.GetComponentInParent<Enemy>().Damage(10f);
+                }
+            }
+
+        }
+        else if (active.ammo > 0)
+        {
+            Reload();
+        }
+    }
+
+    void Reload()
+    {
+        if(active.ammo>0)
+        {
+            int add;
+            add = active.magMax - active.mag;
+            if (add <= active.ammo)
+            {
+                active.ammo -= add;
+                active.mag += add;
+            }
+            else
+            {
+                active.mag += active.ammo;
+                active.ammo = 0;
             }
         }
     }
+
 }
