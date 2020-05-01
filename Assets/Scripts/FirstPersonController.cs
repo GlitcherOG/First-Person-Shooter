@@ -10,6 +10,7 @@ public class FirstPersonController : MonoBehaviour
     public float jump;
     public GameObject model;
     float distToGround;
+    public float heatlh = 100f;
     public Animator anim;
     bool IsGrounded
     {
@@ -55,5 +56,6 @@ private void Start()
             anim.SetBool("Running", false);
         }
         rigd.velocity = transform.TransformDirection(speed);
+        UIManager.Instance.Health.text = "Heath:" + heatlh.ToString();
     }
 }

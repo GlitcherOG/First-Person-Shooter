@@ -36,26 +36,7 @@ public class WeaponManager : MonoBehaviour
         {
             Reload();
         }
-        //if (Input.GetKeyDown("1"))
-        //{
-        //    slotActive++;
-        //    if (slotActive > 2)
-        //    {
-        //        slotActive = 0;
-        //    }
-        //    if (slotActive == 0)
-        //    {
-        //        ChangeWeapon(null, true);
-        //    }
-        //    if (slotActive == 1)
-        //    {
-        //        ChangeWeapon(primary);
-        //    }
-        //    if (slotActive == 2)
-        //    {
-        //        ChangeWeapon(secondary);
-        //    }
-        //}
+        UIManager.Instance.Ammo.text = "Ammo:" + active.mag + "/" + active.ammo;
     }
 
     void ChangeWeapon(Weapons temp, bool knife = false)
