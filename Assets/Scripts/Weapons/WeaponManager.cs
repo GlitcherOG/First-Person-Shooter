@@ -14,10 +14,6 @@ public class WeaponManager : MonoBehaviour
     public bool fire;
     public float cooldown = 0.3f;
     public float cooldownTimer = 2f;
-    private void Start()
-    {
-
-    }
     void Update()
     {
         if (Input.GetButton("Fire1") && !fire && cooldownTimer <= 0)
