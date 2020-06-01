@@ -33,19 +33,19 @@ public class PlayerCameraController : NetworkBehaviour
         enabled = true;
 
         //controls = new Controls();
-        controls.Player.Look.performed += ctx => Look(ctx.ReadValue<Vector2>());
+        Controls.Player.Look.performed += ctx => Look(ctx.ReadValue<Vector2>());
     }
     [ClientCallback]
     private void OnEnable()
     {
-        controls.Enable();
+        Controls.Enable();
     }
 
     [ClientCallback]
 
     private void OnDisable()
     {
-        controls.Disable();
+        Controls.Disable();
     }
     private void Look(Vector2 lookAxis)
     {

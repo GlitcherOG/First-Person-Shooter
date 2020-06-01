@@ -44,9 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneId: 3120495100
+  sceneId: 0
   serverOnly: 0
   m_AssetId: 
+  hasSpawned: 0
 --- !u!114 &8906539459577147574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,5 +62,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  playerPrefab: {fileID: 2981193306169530482, guid: 7b5b836d4bfac9e4584b15c68f6ded4b,
+  playerPrefab: {fileID: 1809122434222875962, guid: be90cab1402ac0c47bc84b2cc50cf036,
     type: 3}
