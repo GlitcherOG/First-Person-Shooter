@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1809122434222875964}
   - component: {fileID: 498013571}
   - component: {fileID: 498013573}
+  - component: {fileID: 1414717971350487741}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -87,6 +88,22 @@ MonoBehaviour:
   cameraVelocity: {x: 4, y: 0.25}
   playerTransform: {fileID: 1809122434222875967}
   virtualCamera: {fileID: 5074225682235567009}
+--- !u!114 &1414717971350487741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809122434222875962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4c2be8f4a21f94e9dedf47a93861d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  movementSpeed: 5
+  controller: {fileID: 498013571}
 --- !u!1 &3407562546621971613
 GameObject:
   m_ObjectHideFlags: 0
