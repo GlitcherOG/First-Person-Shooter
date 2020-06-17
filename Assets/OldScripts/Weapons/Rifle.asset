@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa064d8c3cca75419cabf284d82da1c, type: 3}
+  m_Name: Rifle
+  m_EditorClassIdentifier: 
+  weaponName: Rifle
+  damage: 25
+  ammo: 84
+  maxAmmo: 999
+  mag: 14
+  magMax: 16
+  accuracy: 10
+  weaponPrefab: {fileID: -927199367670048503, guid: 5f0b832e24a17e042961386dbf9bcf6e,
+    type: 3}
+  img: {fileID: 0}

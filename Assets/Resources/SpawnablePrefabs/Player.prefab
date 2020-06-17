@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 498013571}
   - component: {fileID: 498013573}
   - component: {fileID: 1414717971350487741}
+  - component: {fileID: 79372227106714046}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -104,6 +105,24 @@ MonoBehaviour:
   syncInterval: 0.1
   movementSpeed: 5
   controller: {fileID: 498013571}
+--- !u!114 &79372227106714046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809122434222875962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c9ebc1668b1c6449ebf775fd33ef0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  playersTeamID: 0
+  weapons: []
+  forwardDropOffset: 3
+  upDropOffset: 0
 --- !u!1 &3407562546621971613
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3407562546621971613}
   m_LocalRotation: {x: 0.2500758, y: -0.24531695, z: 0.06565978, w: 0.9343289}
-  m_LocalPosition: {x: 2.8199992, y: 3.3099995, z: -5}
+  m_LocalPosition: {x: 2.8199992, y: 3.3099995, z: -5.312}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9184989212718170858}

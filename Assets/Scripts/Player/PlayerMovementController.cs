@@ -51,7 +51,7 @@ public class PlayerMovementController : NetworkBehaviour
     [Client]
     private void SetMovement(Vector2 movement)
     {
-
+        previousInput = movement;
     }
 
     [Client]
