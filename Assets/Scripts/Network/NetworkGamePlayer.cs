@@ -23,14 +23,18 @@ public class NetworkGamePlayer : NetworkBehaviour
             return room;
         }
     }
-
+    /// <summary>
+    /// On client start
+    /// </summary>
     public override void OnStartClient()
     {
         DontDestroyOnLoad(gameObject);
 
         Room.GamePlayers.Add(this);
     }
-
+    /// <summary>
+    /// On the network destroy
+    /// </summary>
     public override void OnNetworkDestroy()
     {
         Room.GamePlayers.Remove(this);

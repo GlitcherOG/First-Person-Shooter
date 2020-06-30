@@ -45,36 +45,52 @@ public class NetworkRoomPlayer : NetworkBehaviour
             return room;
         }
     }
-
+    /// <summary>
+    /// If the player owns the object and script
+    /// </summary>
     public override void OnStartAuthority()
     {
         CmdSetDisplayName(PlayerNameInput.DisplayName);
 
         lobbyUI.SetActive(true);
     }
-
+    /// <summary>
+    /// On the client start
+    /// </summary>
     public override void OnStartClient()
     {
         Room.RoomPlayers.Add(this);
         UpdateDisplay();
     }
-
+    /// <summary>
+    /// On network destory 
+    /// </summary>
     public override void OnNetworkDestroy()
     {
         Room.RoomPlayers.Remove(this);
         UpdateDisplay();
     }
-
+    /// <summary>
+    /// Changing the display name
+    /// </summary>
+    /// <param name="oldValue"></param>
+    /// <param name="newValue"></param>
     public void HandleDisplayNameChanged(string oldValue, string newValue)
     {
         UpdateDisplay();
     }
-
+    /// <summary>
+    /// Change the handle ready status from the player
+    /// </summary>
+    /// <param name="oldValue"></param>
+    /// <param name="newValue"></param>
     public void HandleReadyStatusChanged(bool oldValue, bool newValue)
     {
         UpdateDisplay();
     }
-
+    /// <summary>
+    /// Update the display
+    /// </summary>
     private void UpdateDisplay()
     {
         if(!hasAuthority)
@@ -105,7 +121,10 @@ public class NetworkRoomPlayer : NetworkBehaviour
                     "<color=red>Not Ready</color>";
         }
     }
-
+    /// <summary>
+    /// Handle the ready 
+    /// </summary>
+    /// <param name="readyToStart"></param>
     public void HandleReadyToStart(bool readyToStart)
     {
         if(!isLeader)
@@ -115,13 +134,18 @@ public class NetworkRoomPlayer : NetworkBehaviour
 
         startGameButton.interactable = readyToStart;
     }
-
+    /// <summary>
+    /// Set the display name
+    /// </summary>
+    /// <param name="displayName"></param>
     [Command]
     private void CmdSetDisplayName(string displayName)
     {
         DisplayName = displayName;
     }
-
+    /// <summary>
+    /// Ready up on the server
+    /// </summary>
     [Command]
     public void CmdReadyUp()
     {
@@ -129,7 +153,9 @@ public class NetworkRoomPlayer : NetworkBehaviour
 
         Room.NotifyPlayersOfReadyState();
     }
-
+    /// <summary>
+    /// Start the Game
+    /// </summary>
     [Command]
     public void CmdStartGame()
     {

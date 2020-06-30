@@ -26,12 +26,16 @@ public class NetworkManagerLobby : NetworkManager
 
     public List<NetworkRoomPlayer> RoomPlayers { get; } = new List<NetworkRoomPlayer>();
     public List<NetworkGamePlayer> GamePlayers { get; } = new List<NetworkGamePlayer>();
-
+    /// <summary>
+    /// On the sever start
+    /// </summary>
     public override void OnStartServer()
     {
         spawnPrefabs = Resources.LoadAll<GameObject>("SpawnablePrefabs").ToList<GameObject>();
     }
-
+    /// <summary>
+    /// On the Client start
+    /// </summary>
     public override void OnStartClient()
     {
         var spawnablePrefabs = Resources.LoadAll<GameObject>("SpawnablePrefabs");
@@ -41,21 +45,30 @@ public class NetworkManagerLobby : NetworkManager
             ClientScene.RegisterPrefab(prefab);
         }
     }
-
+    /// <summary>
+    /// On the client connect
+    /// </summary>
+    /// <param name="conn"></param>
     public override void OnClientConnect(NetworkConnection conn)
     {
         base.OnClientConnect(conn);
 
         onClientConnected?.Invoke();
     }
-
+    /// <summary>
+    /// On the client disconnect
+    /// </summary>
+    /// <param name="conn"></param>
     public override void OnClientDisconnect(NetworkConnection conn)
     {
         base.OnClientDisconnect(conn);
 
         onClientDisconnected?.Invoke();
     }
-
+    /// <summary>
+    /// On the server connect
+    /// </summary>
+    /// <param name="conn"></param>
     public override void OnServerConnect(NetworkConnection conn)
     {
         if(numPlayers >= maxConnections)
@@ -71,7 +84,10 @@ public class NetworkManagerLobby : NetworkManager
             return;
         }
     }
-
+    /// <summary>
+    /// On the server adding a player
+    /// </summary>
+    /// <param name="conn"></param>
     public override void OnServerAddPlayer(NetworkConnection conn)
     {
         if (SceneManager.GetActiveScene().path == menuScene)
@@ -86,7 +102,10 @@ public class NetworkManagerLobby : NetworkManager
         }
     }
 
-
+    /// <summary>
+    /// On server disconnect
+    /// </summary>
+    /// <param name="conn"></param>
     public override void OnServerDisconnect(NetworkConnection conn)
     {
         if(conn.identity != null)
@@ -100,12 +119,16 @@ public class NetworkManagerLobby : NetworkManager
 
         base.OnServerDisconnect(conn);
     }
-
+    /// <summary>
+    /// On the server stop
+    /// </summary>
     public override void OnStopServer()
     {
         RoomPlayers.Clear();
     }
-
+    /// <summary>
+    /// Notify the players of ready state
+    /// </summary>
     public void NotifyPlayersOfReadyState()
     {
         foreach (var player in RoomPlayers)
@@ -113,7 +136,10 @@ public class NetworkManagerLobby : NetworkManager
             player.HandleReadyToStart(IsReadyToStart());
         }
     }
-
+    /// <summary>
+    /// When everyone is ready to start
+    /// </summary>
+    /// <returns></returns>
     private bool IsReadyToStart()
     {
         if(numPlayers < minPlayers)
@@ -131,7 +157,10 @@ public class NetworkManagerLobby : NetworkManager
 
         return true;
     }
-
+    /// <summary>
+    /// On the server being ready
+    /// </summary>
+    /// <param name="conn"></param>
 
     public override void OnServerReady(NetworkConnection conn)
     {
@@ -139,7 +168,10 @@ public class NetworkManagerLobby : NetworkManager
 
         onServerReadied?.Invoke(conn);
     }
-
+    /// <summary>
+    /// Starting game
+    /// </summary>
+    /// <param name="test"></param>
     public void StartGame(string test = "")
     {
         if(SceneManager.GetActiveScene().path == menuScene)
@@ -159,7 +191,10 @@ public class NetworkManagerLobby : NetworkManager
         }
     }
 
-    
+    /// <summary>
+    /// On server changing Scene
+    /// </summary>
+    /// <param name="newSceneName"></param>
     public override void ServerChangeScene(string newSceneName)
     {
         //from menu to game
@@ -179,7 +214,10 @@ public class NetworkManagerLobby : NetworkManager
 
         base.ServerChangeScene(newSceneName);
     }
-
+    /// <summary>
+    /// Once the servers scene has changed
+    /// </summary>
+    /// <param name="sceneName"></param>
     public override void OnServerSceneChanged(string sceneName)
     {
         if (sceneName.StartsWith("Game_Map"))
