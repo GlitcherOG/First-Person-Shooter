@@ -5,16 +5,23 @@ using UnityEngine;
 
 public class PlayerSpawnPoint : MonoBehaviour
 {
+    /// <summary>
+    /// On script awake add spawnpoint
+    /// </summary>
     private void Awake()
     {
         PlayerSpawnSystem.AddSpawnPoint(transform);
     }
-
+    /// <summary>
+    /// On script destory
+    /// </summary>
     private void OnDestroy()
     {
         PlayerSpawnSystem.RemoveSpawnPoint(transform);
     }
-
+    /// <summary>
+    /// Draw the spawn point on the editor window
+    /// </summary>
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;

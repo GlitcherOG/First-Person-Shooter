@@ -24,6 +24,9 @@ public class PlayerCameraController : NetworkBehaviour
     }
     private CinemachineTransposer transposer;
 
+    /// <summary>
+    /// If the player owns this object
+    /// </summary>
     public override void OnStartAuthority()
     {
         transposer = virtualCamera.GetCinemachineComponent<CinemachineTransposer>();
@@ -34,13 +37,20 @@ public class PlayerCameraController : NetworkBehaviour
 
         PlayerControls.Player.Look.performed += ctx => Look(ctx.ReadValue<Vector2>());
     }
-
+    /// <summary>
+    /// When the script is enabled
+    /// </summary>
     [ClientCallback]
     private void OnEnable() => PlayerControls.Enable();
-
+    /// <summary>
+    /// When the script is disabled
+    /// </summary>
     [ClientCallback]
     private void OnDisable() => PlayerControls.Disable();
-
+    /// <summary>
+    /// Make the camera to look around
+    /// </summary>
+    /// <param name="lookAxis"></param>
     private void Look(Vector2 lookAxis)
     {
         float followOffset = Mathf.Clamp(

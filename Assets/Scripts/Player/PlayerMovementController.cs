@@ -22,6 +22,9 @@ public class PlayerMovementController : NetworkBehaviour
         }
     }
 
+    /// <summary>
+    /// If the player owns this object/script
+    /// </summary>
     public override void OnStartAuthority()
     {
         enabled = true;
@@ -30,31 +33,44 @@ public class PlayerMovementController : NetworkBehaviour
         PlayerControls.Player.Move.canceled += ctx => ResetMovement();
     }
 
-
+    /// <summary>
+    /// On script Enable
+    /// </summary>
     [ClientCallback]
     private void OnEnable() => PlayerControls.Enable();
-
+    /// <summary>
+    /// On script Disable
+    /// </summary>
     [ClientCallback]
     private void OnDisable() => PlayerControls.Disable();
-
+    /// <summary>
+    /// Every frame update
+    /// </summary>
     [ClientCallback]
     private void Update()
     {
         Move();
     }
-
+    /// <summary>
+    /// Sets the movement of the player
+    /// </summary>
+    /// <param name="movement"></param>
     [Client]
     private void SetMovement(Vector2 movement)
     {
         previousInput = movement;
     }
-
+    /// <summary>
+    /// Resets the movement of the controller
+    /// </summary>
     [Client]
     private void ResetMovement()
     {
         previousInput = Vector2.zero;
     }
-
+    /// <summary>
+    /// Moves the character
+    /// </summary>
     [Client]
     private void Move()
     {

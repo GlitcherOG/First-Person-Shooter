@@ -12,7 +12,10 @@ public class PlayerSpawnSystem : NetworkBehaviour
     private static List<Transform> spawnPoints = new List<Transform>();
 
     private int nextIndex = 0;
-
+    /// <summary>
+    /// Adds a spawn point
+    /// </summary>
+    /// <param name="spawnTransform"></param>
     public static void AddSpawnPoint(Transform spawnTransform)
     {
         spawnPoints.Add(spawnTransform);
@@ -20,19 +23,30 @@ public class PlayerSpawnSystem : NetworkBehaviour
         spawnPoints = spawnPoints.OrderBy(x => x.GetSiblingIndex()).ToList();
     }
 
+    /// <summary>
+    /// Static void that removes spawn point
+    /// </summary>
+    /// <param name="spawnTransform"></param>
     public static void RemoveSpawnPoint(Transform spawnTransform) => spawnPoints.Remove(spawnTransform);
-
+    /// <summary>
+    /// On the servers start
+    /// </summary>
     public override void OnStartServer()
     {
         NetworkManagerLobby.onServerReadied += SpawnPlayer;
     }
-
+    /// <summary>
+    /// On the gameobject destroy
+    /// </summary>
     [ServerCallback]
     private void OnDestroy()
     {
         NetworkManagerLobby.onServerReadied -= SpawnPlayer;
     }
-
+    /// <summary>
+    /// Spawn a player in
+    /// </summary>
+    /// <param name="conn"></param>
     [Server]
     public void SpawnPlayer(NetworkConnection conn)
     {
