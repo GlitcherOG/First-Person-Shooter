@@ -23,7 +23,9 @@ public class WeaponManager : MonoBehaviour
             return playerControls = new Controls();
         }
     }
-
+    /// <summary>
+    /// Waits for inputs
+    /// </summary>
     [ClientCallback]
     void Update()
     {
@@ -46,6 +48,9 @@ public class WeaponManager : MonoBehaviour
         //If r is pushed down
         PlayerControls.Player.Reload.performed += ctx => Reload();
     }
+    /// <summary>
+    /// Shoots the weapon across all clients
+    /// </summary>
     [Mirror.ClientRpc]
     void Shoot()
     {
@@ -83,6 +88,9 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Shoots the weapon across all clients
+    /// </summary>
     [Mirror.ClientRpc]
     void Reload()
     {

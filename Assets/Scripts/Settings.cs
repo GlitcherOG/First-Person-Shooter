@@ -99,7 +99,7 @@ public class Settings : MonoBehaviour
         audioMixer.SetFloat("Volume", soundLevel);
     }
     /// <summary>
-    /// test
+    /// Changes the fullscreen state
     /// </summary>
     /// <param name="isFullscreen"></param>
     public void SetFullscreen(bool isFullscreen)
@@ -107,13 +107,19 @@ public class Settings : MonoBehaviour
         //Change the fullscreen state using the bool isFullScreen
         Screen.fullScreen = isFullscreen;
     }
-
+    /// <summary>
+    /// Changes the quality using an index
+    /// </summary>
+    /// <param name="index"></param>
     public void SetQuailty(int index)
     {
         //Set the quailty settings using the index
         QualitySettings.SetQualityLevel(index);
     }
-
+    /// <summary>
+    /// Changes the resolution using an index
+    /// </summary>
+    /// <param name="index"></param>
     public void SetResolution(int index)
     {
         //Change the resolution of the screen using the array and index

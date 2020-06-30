@@ -13,18 +13,24 @@ public class Player : NetworkBehaviour
     public GameObject HolderFlag;
     public GameObject flagObject;
 
-
+    /// <summary>
+    /// If the player is the owner of this object
+    /// </summary>
     public override void OnStartAuthority()
     {
         Instance = this;
     }
+
     [ClientCallback]
     private void Update()
     {
 
     }
 
-
+    /// <summary>
+    /// Toggles the plays holding flag state
+    /// </summary>
+    /// <param name="flag"></param>
     public void IsHoldingFlag(GameObject flag = null)
     {
         Flag = !Flag;

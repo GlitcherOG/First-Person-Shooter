@@ -25,6 +25,10 @@ public class PauseMenu : MonoBehaviour
         //If input for escape key and showInv is false
         PlayerControls.Player.Pause.performed += ctx => TogglePause();
     }
+
+    /// <summary>
+    /// Toggles the game pause menu
+    /// </summary>
     public void TogglePause()
     {
         //If the game is paused

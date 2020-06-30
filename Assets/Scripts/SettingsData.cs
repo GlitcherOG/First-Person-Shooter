@@ -6,6 +6,10 @@ public class SettingsData
     public float soundLevel; //Sound Level of the game
     public string forward, backward, left, right, inventory, interact, jump; //Strings containing the forward, backward, left, right, inventory, interact and jump keys
 
+    /// <summary>
+    /// Used to set the values in the settings file
+    /// </summary>
+    /// <param name="settings"></param>
     public SettingsData(Settings settings)
     {
         //Set the quailty index to be the value located from the quailty dropdown 
