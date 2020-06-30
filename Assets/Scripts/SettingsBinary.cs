@@ -3,6 +3,10 @@ using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 public static class SettingsBinary
 {
+    /// <summary>
+    /// Saves the settings script data into a file
+    /// </summary>
+    /// <param name="settings"></param>
     public static void SaveSettingData(Settings settings)
     {
         //New Binary Formatter
@@ -18,6 +22,11 @@ public static class SettingsBinary
         //Close the stream
         stream.Close();
     }
+
+    /// <summary>
+    /// Loads the settings data into settings
+    /// </summary>
+    /// <returns></returns>
     public static SettingsData LoadSettingsData()
     {
         //New string path for the application loading location

@@ -11,12 +11,18 @@ public class GameMode : MonoBehaviour
     public List<Team> teams;
     public List<Transform> spawnPoints;
 
+    /// <summary>
+    /// Runs at the start of the game
+    /// </summary>
     protected void Start()
     {
         Debug.Log("Setting up game");
         SetUpGame();
     }
 
+    /// <summary>
+    /// Sets up the game for the teams
+    /// </summary>
     public void SetUpGame()
     {
         for(int teamID = 0; teamID < teamAmmount; teamID++)
@@ -24,7 +30,11 @@ public class GameMode : MonoBehaviour
             teams.Add(new Team());
         }
     }
-
+    /// <summary>
+    /// Adds score to each of the modes
+    /// </summary>
+    /// <param name="teamID"></param>
+    /// <param name="score"></param>
     public void AddScore(int teamID, int score)
     {
         teams[teamID].score += score;
@@ -35,5 +45,4 @@ public class GameMode : MonoBehaviour
 public class Team
 {
     public int score;
-
 }

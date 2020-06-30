@@ -10,10 +10,12 @@ public class Flag : MonoBehaviour
     private void Start()
     {
         originalLocation = transform.position;
- 
     }
 
-
+    /// <summary>
+    /// On a trigger enter
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         Player player = other.GetComponent<Player>();

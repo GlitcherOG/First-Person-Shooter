@@ -19,7 +19,9 @@ public class PauseMenu : MonoBehaviour
             return playerControls = new Controls();
         }
     }
-
+    /// <summary>
+    /// Runs every frame
+    /// </summary>
     void Update()
     {
         //If input for escape key and showInv is false

@@ -5,12 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    /// <summary>
+    /// Changes the game scene using the scene index
+    /// </summary>
+    /// <param name="sceneIndex"></param>
     public void ChangeScene(int sceneIndex)
     {
         //Load the scene locatated at scene Index
         SceneManager.LoadScene(sceneIndex);
     }
-
+    /// <summary>
+    /// Exits the game
+    /// </summary>
     public void ExitGame()
     {
         //If the player is the unity editor

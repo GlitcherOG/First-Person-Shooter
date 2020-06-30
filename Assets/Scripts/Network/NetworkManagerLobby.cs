@@ -140,7 +140,7 @@ public class NetworkManagerLobby : NetworkManager
         onServerReadied?.Invoke(conn);
     }
 
-    public void StartGame()
+    public void StartGame(string test = "")
     {
         if(SceneManager.GetActiveScene().path == menuScene)
         {
@@ -148,8 +148,14 @@ public class NetworkManagerLobby : NetworkManager
             {
                 return;
             }
-
-            ServerChangeScene("Game_Map_01");
+            if (test == "1")
+            {
+                ServerChangeScene("Game_Map_01");
+            }
+            else
+            {
+                ServerChangeScene("Game_Map_02");
+            }
         }
     }
 
@@ -170,7 +176,6 @@ public class NetworkManagerLobby : NetworkManager
                 NetworkServer.ReplacePlayerForConnection(conn, gamePlayerInstance.gameObject, true);
             }
         }
-
 
         base.ServerChangeScene(newSceneName);
     }

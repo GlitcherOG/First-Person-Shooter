@@ -35,7 +35,10 @@ public class NetworkGamePlayer : NetworkBehaviour
     {
         Room.GamePlayers.Remove(this);
     }
-
+    /// <summary>
+    /// Sets the players name
+    /// </summary>
+    /// <param name="displayName"></param>
     [Server]
     public void SetDisplayName(string displayName)
     {

@@ -28,7 +28,9 @@ public class PlayerNameInput : MonoBehaviour
             Debug.LogError("continueButton is not attached to PlayerNameInput");
         }
     }
-
+    /// <summary>
+    /// Sets up the input field for the player
+    /// </summary>
     private void SetUpInputField()
     {
         if (!PlayerPrefs.HasKey(PlayerPrefsNameKey))
@@ -43,12 +45,17 @@ public class PlayerNameInput : MonoBehaviour
 
         SetPlayerName(defaultName);
     }
-
+    /// <summary>
+    /// Sets the players name
+    /// </summary>
+    /// <param name="name"></param>
     public void SetPlayerName(string name)
     {
         continueButton.interactable = !string.IsNullOrEmpty(name);
     }
-
+    /// <summary>
+    /// Saves the players name
+    /// </summary>
     public void SavePlayerName()
     {
         DisplayName = nameInputField.text;

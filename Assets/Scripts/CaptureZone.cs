@@ -7,6 +7,10 @@ public class CaptureZone : MonoBehaviour
     [SerializeField] int teamID;
 
     GameModeCTF gameModeCTF;
+
+    /// <summary>
+    /// Runs at the start of the game
+    /// </summary>
     private void Start()
     {
         gameModeCTF = FindObjectOfType<GameModeCTF>();
@@ -17,6 +21,10 @@ public class CaptureZone : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// If something enters the trigger
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         Player player = other.GetComponent<Player>();

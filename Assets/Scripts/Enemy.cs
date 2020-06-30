@@ -8,6 +8,10 @@ public class Enemy : MonoBehaviour
     public bool dead; //If the Enemy is dead
     public Animator anim; //The animatior attacted the the enemy
     public GameObject weapon; //Weapon game object on the Enemy
+
+    /// <summary>
+    /// Runs every frame for the gamme object
+    /// </summary>
     private void Update()
     {
         //If the health is less than or zero and dead is false
@@ -17,7 +21,9 @@ public class Enemy : MonoBehaviour
             Death();
         }
     }
-
+    /// <summary>
+    /// Death handling of the enemy
+    /// </summary>
     void Death()
     {
         //Set dead to true
@@ -32,7 +38,10 @@ public class Enemy : MonoBehaviour
         weapon.GetComponentInChildren<Rigidbody>().isKinematic = false;
     }
 
-    //Void for damaging enemy
+    /// <summary>
+    /// Void for damaging enemy
+    /// </summary>
+    /// <param name="damage"></param>
     public void Damage(float damage)
     {
         //Minus damage from health
