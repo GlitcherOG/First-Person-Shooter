@@ -10,31 +10,31 @@ Inheritance diagram for Network\+Manager\+Lobby\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 override void \mbox{\hyperlink{class_network_manager_lobby_a9c4a42c75c2657638b390fc0719b0854}{On\+Start\+Server}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em On the sever start \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_manager_lobby_a51900a340a734bfd83d2b06029d64173}{On\+Start\+Client}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em On the Client start \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_manager_lobby_ac6c5dc10c0b53fa13dc5853a918a8db8}{On\+Client\+Connect}} (Network\+Connection conn)
-\item 
+\begin{DoxyCompactList}\small\item\em On the client connect \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_manager_lobby_a750ee18b67abe7a736db0f349be4210f}{On\+Client\+Disconnect}} (Network\+Connection conn)
-\item 
+\begin{DoxyCompactList}\small\item\em On the client disconnect \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_manager_lobby_a03dade20972d921dd031a168cad5bf73}{On\+Server\+Connect}} (Network\+Connection conn)
-\item 
+\begin{DoxyCompactList}\small\item\em On the server connect \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_manager_lobby_ad80459f1b3c230ca993952e7e9ba6c48}{On\+Server\+Add\+Player}} (Network\+Connection conn)
-\item 
+\begin{DoxyCompactList}\small\item\em On the server adding a player \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_manager_lobby_a7e5035b28119c8a7e5cc40d0ff6d3961}{On\+Server\+Disconnect}} (Network\+Connection conn)
-\item 
+\begin{DoxyCompactList}\small\item\em On server disconnect \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_manager_lobby_ab0abc178f440e2cd966e912095f11333}{On\+Stop\+Server}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em On the server stop \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_network_manager_lobby_a9407abcd5cbdaccf6a4ca60e45fe43a7}{Notify\+Players\+Of\+Ready\+State}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Notify the players of ready state \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_manager_lobby_a3fbb5e9b88afe6bb16577d3c84300a53}{On\+Server\+Ready}} (Network\+Connection conn)
-\item 
+\begin{DoxyCompactList}\small\item\em On the server being ready \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_network_manager_lobby_a66cd1d78556a6eee058a195cd44f96d6}{Start\+Game}} (string test=\char`\"{}\char`\"{})
-\item 
+\begin{DoxyCompactList}\small\item\em Starting game \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_manager_lobby_a401b2414ea4e901cd4565c5b3c98ad45}{Server\+Change\+Scene}} (string new\+Scene\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em On server changing Scene \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_manager_lobby_a038deab73157197c3bd1a687c4b9f95e}{On\+Server\+Scene\+Changed}} (string scene\+Name)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Once the servers scene has changed \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -60,53 +60,124 @@ static Action$<$ Network\+Connection $>$ \mbox{\hyperlink{class_network_manager_
 \doxysubsubsection{\texorpdfstring{NotifyPlayersOfReadyState()}{NotifyPlayersOfReadyState()}}
 {\footnotesize\ttfamily void Network\+Manager\+Lobby.\+Notify\+Players\+Of\+Ready\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Notify the players of ready state 
+
 \mbox{\Hypertarget{class_network_manager_lobby_ac6c5dc10c0b53fa13dc5853a918a8db8}\label{class_network_manager_lobby_ac6c5dc10c0b53fa13dc5853a918a8db8}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!OnClientConnect@{OnClientConnect}}
 \index{OnClientConnect@{OnClientConnect}!NetworkManagerLobby@{NetworkManagerLobby}}
 \doxysubsubsection{\texorpdfstring{OnClientConnect()}{OnClientConnect()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Client\+Connect (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
 
+
+
+On the client connect 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_manager_lobby_a750ee18b67abe7a736db0f349be4210f}\label{class_network_manager_lobby_a750ee18b67abe7a736db0f349be4210f}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!OnClientDisconnect@{OnClientDisconnect}}
 \index{OnClientDisconnect@{OnClientDisconnect}!NetworkManagerLobby@{NetworkManagerLobby}}
 \doxysubsubsection{\texorpdfstring{OnClientDisconnect()}{OnClientDisconnect()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Client\+Disconnect (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
 
+
+
+On the client disconnect 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_manager_lobby_ad80459f1b3c230ca993952e7e9ba6c48}\label{class_network_manager_lobby_ad80459f1b3c230ca993952e7e9ba6c48}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!OnServerAddPlayer@{OnServerAddPlayer}}
 \index{OnServerAddPlayer@{OnServerAddPlayer}!NetworkManagerLobby@{NetworkManagerLobby}}
 \doxysubsubsection{\texorpdfstring{OnServerAddPlayer()}{OnServerAddPlayer()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Server\+Add\+Player (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
 
+
+
+On the server adding a player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_manager_lobby_a03dade20972d921dd031a168cad5bf73}\label{class_network_manager_lobby_a03dade20972d921dd031a168cad5bf73}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!OnServerConnect@{OnServerConnect}}
 \index{OnServerConnect@{OnServerConnect}!NetworkManagerLobby@{NetworkManagerLobby}}
 \doxysubsubsection{\texorpdfstring{OnServerConnect()}{OnServerConnect()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Server\+Connect (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
 
+
+
+On the server connect 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_manager_lobby_a7e5035b28119c8a7e5cc40d0ff6d3961}\label{class_network_manager_lobby_a7e5035b28119c8a7e5cc40d0ff6d3961}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!OnServerDisconnect@{OnServerDisconnect}}
 \index{OnServerDisconnect@{OnServerDisconnect}!NetworkManagerLobby@{NetworkManagerLobby}}
 \doxysubsubsection{\texorpdfstring{OnServerDisconnect()}{OnServerDisconnect()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Server\+Disconnect (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
 
+
+
+On server disconnect 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_manager_lobby_a3fbb5e9b88afe6bb16577d3c84300a53}\label{class_network_manager_lobby_a3fbb5e9b88afe6bb16577d3c84300a53}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!OnServerReady@{OnServerReady}}
 \index{OnServerReady@{OnServerReady}!NetworkManagerLobby@{NetworkManagerLobby}}
 \doxysubsubsection{\texorpdfstring{OnServerReady()}{OnServerReady()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Server\+Ready (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
 
+
+
+On the server being ready 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_manager_lobby_a038deab73157197c3bd1a687c4b9f95e}\label{class_network_manager_lobby_a038deab73157197c3bd1a687c4b9f95e}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!OnServerSceneChanged@{OnServerSceneChanged}}
 \index{OnServerSceneChanged@{OnServerSceneChanged}!NetworkManagerLobby@{NetworkManagerLobby}}
 \doxysubsubsection{\texorpdfstring{OnServerSceneChanged()}{OnServerSceneChanged()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Server\+Scene\+Changed (\begin{DoxyParamCaption}\item[{string}]{scene\+Name }\end{DoxyParamCaption})}
 
+
+
+Once the servers scene has changed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_manager_lobby_a51900a340a734bfd83d2b06029d64173}\label{class_network_manager_lobby_a51900a340a734bfd83d2b06029d64173}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!OnStartClient@{OnStartClient}}
 \index{OnStartClient@{OnStartClient}!NetworkManagerLobby@{NetworkManagerLobby}}
 \doxysubsubsection{\texorpdfstring{OnStartClient()}{OnStartClient()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Start\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+On the Client start 
 
 \mbox{\Hypertarget{class_network_manager_lobby_a9c4a42c75c2657638b390fc0719b0854}\label{class_network_manager_lobby_a9c4a42c75c2657638b390fc0719b0854}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!OnStartServer@{OnStartServer}}
@@ -114,11 +185,19 @@ static Action$<$ Network\+Connection $>$ \mbox{\hyperlink{class_network_manager_
 \doxysubsubsection{\texorpdfstring{OnStartServer()}{OnStartServer()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+On the sever start 
+
 \mbox{\Hypertarget{class_network_manager_lobby_ab0abc178f440e2cd966e912095f11333}\label{class_network_manager_lobby_ab0abc178f440e2cd966e912095f11333}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!OnStopServer@{OnStopServer}}
 \index{OnStopServer@{OnStopServer}!NetworkManagerLobby@{NetworkManagerLobby}}
 \doxysubsubsection{\texorpdfstring{OnStopServer()}{OnStopServer()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Stop\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+On the server stop 
 
 \mbox{\Hypertarget{class_network_manager_lobby_a401b2414ea4e901cd4565c5b3c98ad45}\label{class_network_manager_lobby_a401b2414ea4e901cd4565c5b3c98ad45}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!ServerChangeScene@{ServerChangeScene}}
@@ -126,12 +205,30 @@ static Action$<$ Network\+Connection $>$ \mbox{\hyperlink{class_network_manager_
 \doxysubsubsection{\texorpdfstring{ServerChangeScene()}{ServerChangeScene()}}
 {\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+Server\+Change\+Scene (\begin{DoxyParamCaption}\item[{string}]{new\+Scene\+Name }\end{DoxyParamCaption})}
 
+
+
+On server changing Scene 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Scene\+Name} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_manager_lobby_a66cd1d78556a6eee058a195cd44f96d6}\label{class_network_manager_lobby_a66cd1d78556a6eee058a195cd44f96d6}} 
 \index{NetworkManagerLobby@{NetworkManagerLobby}!StartGame@{StartGame}}
 \index{StartGame@{StartGame}!NetworkManagerLobby@{NetworkManagerLobby}}
 \doxysubsubsection{\texorpdfstring{StartGame()}{StartGame()}}
 {\footnotesize\ttfamily void Network\+Manager\+Lobby.\+Start\+Game (\begin{DoxyParamCaption}\item[{string}]{test = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
 
+
+
+Starting game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Property Documentation}

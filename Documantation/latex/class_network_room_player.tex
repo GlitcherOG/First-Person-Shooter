@@ -10,21 +10,21 @@ Inheritance diagram for Network\+Room\+Player\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 override void \mbox{\hyperlink{class_network_room_player_aa9fc393ccb1e6b87beb1220c11ecf5ce}{On\+Start\+Authority}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em If the player owns the object and script \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_room_player_a754b3344f6a5d8139666f1fbd1af5eb2}{On\+Start\+Client}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em On the client start \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_network_room_player_a7f515ecb5d7c2d47a258d887348ad1df}{On\+Network\+Destroy}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em On network destory \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_network_room_player_acd831b0544de903c40cfb45173c7b227}{Handle\+Display\+Name\+Changed}} (string old\+Value, string new\+Value)
-\item 
+\begin{DoxyCompactList}\small\item\em Changing the display name \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_network_room_player_a2db644a408d4ec01933acfd294d5c06f}{Handle\+Ready\+Status\+Changed}} (bool old\+Value, bool new\+Value)
-\item 
+\begin{DoxyCompactList}\small\item\em Change the handle ready status from the player \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_network_room_player_adb6767e3c17c0485e20ff0af2f5af7ed}{Handle\+Ready\+To\+Start}} (bool ready\+To\+Start)
-\item 
+\begin{DoxyCompactList}\small\item\em Handle the ready \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_network_room_player_ae2ddf228787af33d7cd7986c43f3caba}{Cmd\+Ready\+Up}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Ready up on the server \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_network_room_player_a3e51c63181d4cfe15dc3d318e5f3da05}{Cmd\+Start\+Game}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Start the Game \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -46,11 +46,19 @@ bool \mbox{\hyperlink{class_network_room_player_a89d70fada2f0bd206c46802796db976
 \doxysubsubsection{\texorpdfstring{CmdReadyUp()}{CmdReadyUp()}}
 {\footnotesize\ttfamily void Network\+Room\+Player.\+Cmd\+Ready\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Ready up on the server 
+
 \mbox{\Hypertarget{class_network_room_player_a3e51c63181d4cfe15dc3d318e5f3da05}\label{class_network_room_player_a3e51c63181d4cfe15dc3d318e5f3da05}} 
 \index{NetworkRoomPlayer@{NetworkRoomPlayer}!CmdStartGame@{CmdStartGame}}
 \index{CmdStartGame@{CmdStartGame}!NetworkRoomPlayer@{NetworkRoomPlayer}}
 \doxysubsubsection{\texorpdfstring{CmdStartGame()}{CmdStartGame()}}
 {\footnotesize\ttfamily void Network\+Room\+Player.\+Cmd\+Start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start the Game 
 
 \mbox{\Hypertarget{class_network_room_player_acd831b0544de903c40cfb45173c7b227}\label{class_network_room_player_acd831b0544de903c40cfb45173c7b227}} 
 \index{NetworkRoomPlayer@{NetworkRoomPlayer}!HandleDisplayNameChanged@{HandleDisplayNameChanged}}
@@ -58,23 +66,58 @@ bool \mbox{\hyperlink{class_network_room_player_a89d70fada2f0bd206c46802796db976
 \doxysubsubsection{\texorpdfstring{HandleDisplayNameChanged()}{HandleDisplayNameChanged()}}
 {\footnotesize\ttfamily void Network\+Room\+Player.\+Handle\+Display\+Name\+Changed (\begin{DoxyParamCaption}\item[{string}]{old\+Value,  }\item[{string}]{new\+Value }\end{DoxyParamCaption})}
 
+
+
+Changing the display name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\+Value} & \\
+\hline
+{\em new\+Value} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_room_player_a2db644a408d4ec01933acfd294d5c06f}\label{class_network_room_player_a2db644a408d4ec01933acfd294d5c06f}} 
 \index{NetworkRoomPlayer@{NetworkRoomPlayer}!HandleReadyStatusChanged@{HandleReadyStatusChanged}}
 \index{HandleReadyStatusChanged@{HandleReadyStatusChanged}!NetworkRoomPlayer@{NetworkRoomPlayer}}
 \doxysubsubsection{\texorpdfstring{HandleReadyStatusChanged()}{HandleReadyStatusChanged()}}
 {\footnotesize\ttfamily void Network\+Room\+Player.\+Handle\+Ready\+Status\+Changed (\begin{DoxyParamCaption}\item[{bool}]{old\+Value,  }\item[{bool}]{new\+Value }\end{DoxyParamCaption})}
 
+
+
+Change the handle ready status from the player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\+Value} & \\
+\hline
+{\em new\+Value} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_room_player_adb6767e3c17c0485e20ff0af2f5af7ed}\label{class_network_room_player_adb6767e3c17c0485e20ff0af2f5af7ed}} 
 \index{NetworkRoomPlayer@{NetworkRoomPlayer}!HandleReadyToStart@{HandleReadyToStart}}
 \index{HandleReadyToStart@{HandleReadyToStart}!NetworkRoomPlayer@{NetworkRoomPlayer}}
 \doxysubsubsection{\texorpdfstring{HandleReadyToStart()}{HandleReadyToStart()}}
 {\footnotesize\ttfamily void Network\+Room\+Player.\+Handle\+Ready\+To\+Start (\begin{DoxyParamCaption}\item[{bool}]{ready\+To\+Start }\end{DoxyParamCaption})}
 
+
+
+Handle the ready 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ready\+To\+Start} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_network_room_player_a7f515ecb5d7c2d47a258d887348ad1df}\label{class_network_room_player_a7f515ecb5d7c2d47a258d887348ad1df}} 
 \index{NetworkRoomPlayer@{NetworkRoomPlayer}!OnNetworkDestroy@{OnNetworkDestroy}}
 \index{OnNetworkDestroy@{OnNetworkDestroy}!NetworkRoomPlayer@{NetworkRoomPlayer}}
 \doxysubsubsection{\texorpdfstring{OnNetworkDestroy()}{OnNetworkDestroy()}}
 {\footnotesize\ttfamily override void Network\+Room\+Player.\+On\+Network\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+On network destory 
 
 \mbox{\Hypertarget{class_network_room_player_aa9fc393ccb1e6b87beb1220c11ecf5ce}\label{class_network_room_player_aa9fc393ccb1e6b87beb1220c11ecf5ce}} 
 \index{NetworkRoomPlayer@{NetworkRoomPlayer}!OnStartAuthority@{OnStartAuthority}}
@@ -82,11 +125,19 @@ bool \mbox{\hyperlink{class_network_room_player_a89d70fada2f0bd206c46802796db976
 \doxysubsubsection{\texorpdfstring{OnStartAuthority()}{OnStartAuthority()}}
 {\footnotesize\ttfamily override void Network\+Room\+Player.\+On\+Start\+Authority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+If the player owns the object and script 
+
 \mbox{\Hypertarget{class_network_room_player_a754b3344f6a5d8139666f1fbd1af5eb2}\label{class_network_room_player_a754b3344f6a5d8139666f1fbd1af5eb2}} 
 \index{NetworkRoomPlayer@{NetworkRoomPlayer}!OnStartClient@{OnStartClient}}
 \index{OnStartClient@{OnStartClient}!NetworkRoomPlayer@{NetworkRoomPlayer}}
 \doxysubsubsection{\texorpdfstring{OnStartClient()}{OnStartClient()}}
 {\footnotesize\ttfamily override void Network\+Room\+Player.\+On\+Start\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+On the client start 
 
 
 
