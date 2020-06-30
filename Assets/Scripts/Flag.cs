@@ -7,7 +7,6 @@ public class Flag : MonoBehaviour
     [SerializeField] int teamID;
     public Vector3 originalLocation;
 
-
     private void Start()
     {
         originalLocation = transform.position;
@@ -18,7 +17,6 @@ public class Flag : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Player player = other.GetComponent<Player>();
-
 
         if(player != null)
         {//its a player
@@ -31,9 +29,8 @@ public class Flag : MonoBehaviour
 
             Debug.Log("Capture Flag");
 
-            player.PickUpWeapon(gameObject, originalLocation, teamID,1);
+            player.IsHoldingFlag(this.gameObject);
 
-            gameObject.SetActive(false);
         }
     }
 }

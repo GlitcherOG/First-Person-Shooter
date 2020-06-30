@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['score_285',['score',['../class_team.html#abfd3ef234dc0044d8693d4e1b805636f',1,'Team']]],
-  ['settings_286',['settings',['../class_pause_menu.html#af3f712a6657ce4e63934b46cfde2b540',1,'PauseMenu']]],
-  ['settingsmenu_287',['SettingsMenu',['../class_pause_menu.html#aaf5cb57fe57c8501b3f38b2f90660bfd',1,'PauseMenu']]],
-  ['soundlevel_288',['soundLevel',['../class_settings_data.html#a36c85139eaad87b17659f9d5597f1393',1,'SettingsData']]],
-  ['spawnpoints_289',['spawnPoints',['../class_game_mode.html#a2c37f70820f02881810142e28491b690',1,'GameMode']]]
+  ['reload_291',['Reload',['../struct_controls_1_1_player_actions.html#a07e20288c7ac949cdfbdb5ff2159d5d6',1,'Controls::PlayerActions']]],
+  ['resolutiondropdown_292',['resolutionDropdown',['../class_settings.html#aa256d72d90e8ea25309c54ce5890c95f',1,'Settings']]],
+  ['resolutionindex_293',['resolutionIndex',['../class_settings_data.html#a603ff8b50883c809867a1f6b913eff08',1,'SettingsData']]]
 ];

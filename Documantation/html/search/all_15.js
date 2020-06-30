@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['volume_145',['volume',['../class_settings.html#a7e268fc8c66316d42070a8417c92d45b',1,'Settings']]],
-  ['volumeslider_146',['volumeSlider',['../class_settings.html#a06f887e4f171bf7449e15da2111fa660',1,'Settings']]]
+  ['weapon_151',['weapon',['../class_enemy.html#a37c83ba30f841bb4cc16624895d83b73',1,'Enemy']]],
+  ['weaponmanager_152',['WeaponManager',['../class_weapon_manager.html',1,'']]],
+  ['weaponmanager_2ecs_153',['WeaponManager.cs',['../_weapon_manager_8cs.html',1,'']]]
 ];

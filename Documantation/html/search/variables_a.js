@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['quailtydropdown_280',['quailtyDropdown',['../class_settings.html#aeda99665669ee8bd0101ffced5cfc5a5',1,'Settings']]],
-  ['quailtyindex_281',['quailtyIndex',['../class_settings_data.html#a8a543496045478caee78ba188e4f44d7',1,'SettingsData']]]
+  ['pause_286',['Pause',['../struct_controls_1_1_player_actions.html#a9f11e3de01e04ccec674609dcbdab7ab',1,'Controls::PlayerActions']]],
+  ['pausemenu_287',['pauseMenu',['../class_pause_menu.html#a2a4732fd962c6aa136a867be16b71cc2',1,'PauseMenu']]],
+  ['player_288',['Player',['../class_controls.html#ae1e4e6997c5843d1d7f34507cb9cf30b',1,'Controls']]]
 ];

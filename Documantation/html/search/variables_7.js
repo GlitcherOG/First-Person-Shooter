@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['move_275',['Move',['../struct_controls_1_1_player_actions.html#a3cec57011a767253cfa5060ef4ef9678',1,'Controls::PlayerActions']]]
+  ['look_280',['Look',['../struct_controls_1_1_player_actions.html#a00c05daef97604bc11ee22f1fd338bff',1,'Controls::PlayerActions']]]
 ];

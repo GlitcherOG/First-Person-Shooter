@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Class Members - Variables</title>
+<title>First Person Shooter: Class Members - Variables</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">First Person Shooter
    </div>
+   <div id="projectbrief">A Multiplayer first person shooter</div>
   </td>
  </tr>
  </tbody>
@@ -64,6 +65,9 @@ $(function() {
 &#160;
 
 <h3><a id="index_a"></a>- a -</h3><ul>
+<li>anim
+: <a class="el" href="class_enemy.html#a0c5290406e96e5a13333e973be0aa181">Enemy</a>
+</li>
 <li>audioMixer
 : <a class="el" href="class_settings.html#aded97d0b42a33f64fd68b72951501c19">Settings</a>
 </li>
@@ -74,10 +78,22 @@ $(function() {
 <li>controlSchemes
 : <a class="el" href="class_controls.html#a40efe45bbdbd6f62eeb243bfd91f5060">Controls</a>
 </li>
+<li>cooldown
+: <a class="el" href="class_weapon_manager.html#a11ce4ece5b3f80a09b645c613ddbb195">WeaponManager</a>
+</li>
+<li>cooldownTimer
+: <a class="el" href="class_weapon_manager.html#ab0efc2f2b7a619782c916c5480469afa">WeaponManager</a>
+</li>
 </ul>
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
+<li>dead
+: <a class="el" href="class_enemy.html#a5781471eeb8099a31fe51c3e274542b1">Enemy</a>
+</li>
+<li>detail
+: <a class="el" href="class_weapon_manager.html#af211fed6580846ec9074d5f560a24d99">WeaponManager</a>
+</li>
 <li>DisplayName
 : <a class="el" href="class_network_room_player.html#a5e37be71ec1451f9484ab2920cf4de8b">NetworkRoomPlayer</a>
 </li>
@@ -95,11 +111,27 @@ $(function() {
 <li>Fire
 : <a class="el" href="struct_controls_1_1_player_actions.html#a010f55afe5b8f4c80491990924ffe60f">Controls.PlayerActions</a>
 </li>
+<li>fire
+: <a class="el" href="class_weapon_manager.html#a0fd41fc70a6188d3214d63c1c75a3b6e">WeaponManager</a>
+</li>
+<li>Flag
+: <a class="el" href="class_player.html#a67bbe9713cb7662992d81d80afad755b">Player</a>
+</li>
+<li>flagObject
+: <a class="el" href="class_player.html#aa7fa014cf2cab86d0a8aa95a69d3b6af">Player</a>
+</li>
 <li>forward
 : <a class="el" href="class_settings_data.html#a598f144f0136672d433b7c2ad882d6d3">SettingsData</a>
 </li>
-<li>forwardDropOffset
-: <a class="el" href="class_player.html#a264f3a095963a5b165268f12c2127ef1">Player</a>
+</ul>
+
+
+<h3><a id="index_h"></a>- h -</h3><ul>
+<li>health
+: <a class="el" href="class_enemy.html#ad884c92c058d7678876cb43fb852f213">Enemy</a>
+</li>
+<li>HolderFlag
+: <a class="el" href="class_player.html#aff9fee36279484abcea23b76adaab112">Player</a>
 </li>
 </ul>
 
@@ -114,12 +146,6 @@ $(function() {
 <li>IsReady
 : <a class="el" href="class_network_room_player.html#a585bec84846e4c124dda78491633d4bf">NetworkRoomPlayer</a>
 </li>
-<li>isWeaponDropable
-: <a class="el" href="class_weapon.html#a71bdff2135f794e5412646cb82d55615">Weapon</a>
-</li>
-<li>isWeaponLocked
-: <a class="el" href="class_weapon.html#ad1a206306cdc406ea89d1eb924cb4a66">Weapon</a>
-</li>
 </ul>
 
 
@@ -131,6 +157,15 @@ $(function() {
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>mag
+: <a class="el" href="class_weapon_manager.html#ad261332a2efac5b61dcec04949d37251">WeaponManager</a>
+</li>
+<li>magMax
+: <a class="el" href="class_weapon_manager.html#a7f8bc0c72522872b90a1579426442385">WeaponManager</a>
+</li>
+<li>Main
+: <a class="el" href="class_weapon_manager.html#a07a87b8a0d69117372a6e735da522d5d">WeaponManager</a>
+</li>
 <li>Move
 : <a class="el" href="struct_controls_1_1_player_actions.html#a3cec57011a767253cfa5060ef4ef9678">Controls.PlayerActions</a>
 </li>
@@ -140,7 +175,6 @@ $(function() {
 <h3><a id="index_o"></a>- o -</h3><ul>
 <li>originalLocation
 : <a class="el" href="class_flag.html#a95a2e6a6ec14f64b522525f91f1412dc">Flag</a>
-, <a class="el" href="class_weapon.html#a897bd838a85be2c381c3e3b2032fe87f">Weapon</a>
 </li>
 </ul>
 
@@ -205,17 +239,10 @@ $(function() {
 : <a class="el" href="class_game_mode.html#ace6aaf348b691b5eebf27b60ad498264">GameMode</a>
 </li>
 <li>teamID
-: <a class="el" href="class_weapon.html#a8119d71c4cb49f1f24867e8dd1df04db">Weapon</a>
+: <a class="el" href="class_weapon_manager.html#a9e98fffb6e312e22ac2fbb01853f0178">WeaponManager</a>
 </li>
 <li>teams
 : <a class="el" href="class_game_mode.html#a9a9aec7fbaf833aeb19f2298ecfbfbdf">GameMode</a>
-</li>
-</ul>
-
-
-<h3><a id="index_u"></a>- u -</h3><ul>
-<li>upDropOffset
-: <a class="el" href="class_player.html#acd19c4f30931ba2b019d4c5c502d0609">Player</a>
 </li>
 </ul>
 
@@ -231,11 +258,8 @@ $(function() {
 
 
 <h3><a id="index_w"></a>- w -</h3><ul>
-<li>weapons
-: <a class="el" href="class_player.html#a55f612de4bf737e76d0737f6be28959c">Player</a>
-</li>
-<li>worldWeaponGameObject
-: <a class="el" href="class_weapon.html#a82d35807f96352f1f37728a48daee09f">Weapon</a>
+<li>weapon
+: <a class="el" href="class_enemy.html#a37c83ba30f841bb4cc16624895d83b73">Enemy</a>
 </li>
 </ul>
 </div><!-- contents -->

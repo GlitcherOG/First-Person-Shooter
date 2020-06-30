@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['updropoffset_144',['upDropOffset',['../class_player.html#acd19c4f30931ba2b019d4c5c502d0609',1,'Player']]]
+  ['volume_149',['volume',['../class_settings.html#a7e268fc8c66316d42070a8417c92d45b',1,'Settings']]],
+  ['volumeslider_150',['volumeSlider',['../class_settings.html#a06f887e4f171bf7449e15da2111fa660',1,'Settings']]]
 ];

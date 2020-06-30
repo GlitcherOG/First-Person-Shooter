@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['capturezone_151',['CaptureZone',['../class_capture_zone.html',1,'']]],
-  ['controls_152',['Controls',['../class_controls.html',1,'']]]
+  ['capturezone_154',['CaptureZone',['../class_capture_zone.html',1,'']]],
+  ['controls_155',['Controls',['../class_controls.html',1,'']]]
 ];

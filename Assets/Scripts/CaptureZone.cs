@@ -23,15 +23,15 @@ public class CaptureZone : MonoBehaviour
 
         if (player != null && gameModeCTF != null)
         {
-            if (player.GetWeaponTeamID() != teamID)
+            if (player.teamID != teamID)
             {
                 return;
             }
 
-            if (player.IsHoldingFlag())
+            if (player.Flag)
             {
-                gameModeCTF.AddScore(0, 1);
-                player.ReturnWeapon(1);
+                gameModeCTF.AddScore(player.teamID, 1);
+                player.IsHoldingFlag();
             }
         }
     }

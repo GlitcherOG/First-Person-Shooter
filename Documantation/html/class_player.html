@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Player Class Reference</title>
+<title>First Person Shooter: Player Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">First Person Shooter
    </div>
+   <div id="projectbrief">A Multiplayer first person shooter</div>
   </td>
  </tr>
  </tbody>
@@ -82,27 +83,17 @@ Inheritance diagram for Player:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a18c91668a6d6ef178eb5549ff32b6795"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a18c91668a6d6ef178eb5549ff32b6795">OnStartAuthority</a> ()</td></tr>
 <tr class="separator:a18c91668a6d6ef178eb5549ff32b6795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f273a6861204565dbb82548af33fb6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a2f273a6861204565dbb82548af33fb6a">PickUpWeapon</a> (GameObject weaponObject, Vector3 originalLocation, int <a class="el" href="class_player.html#a2ca0d5eedf3b254513a041d50c13873c">teamID</a>, int weaponID, bool overrideLock=false)</td></tr>
-<tr class="separator:a2f273a6861204565dbb82548af33fb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f401ec967dd0b69552bdffe7c385f25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a2f401ec967dd0b69552bdffe7c385f25">SwitchWeapon</a> (int weaponID, bool overrideLock=false)</td></tr>
-<tr class="separator:a2f401ec967dd0b69552bdffe7c385f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf3b6faabf83cb2946b4f9b31fd033a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a0bf3b6faabf83cb2946b4f9b31fd033a">DropWeapon</a> (int weaponID)</td></tr>
-<tr class="separator:a0bf3b6faabf83cb2946b4f9b31fd033a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4572382376673761dff583ab1a92702"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aa4572382376673761dff583ab1a92702">ReturnWeapon</a> (int weaponID)</td></tr>
-<tr class="separator:aa4572382376673761dff583ab1a92702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad27855b891d165f1df6e9496a644a837"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad27855b891d165f1df6e9496a644a837">IsHoldingFlag</a> ()</td></tr>
-<tr class="separator:ad27855b891d165f1df6e9496a644a837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0611fe09c9c5e566b3e44e700088e1c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a0611fe09c9c5e566b3e44e700088e1c2">GetWeaponTeamID</a> ()</td></tr>
-<tr class="separator:a0611fe09c9c5e566b3e44e700088e1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342ccf6ce8178c8d8837024a9905fb68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a342ccf6ce8178c8d8837024a9905fb68">IsHoldingFlag</a> (GameObject flag=null)</td></tr>
+<tr class="separator:a342ccf6ce8178c8d8837024a9905fb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a55f612de4bf737e76d0737f6be28959c"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_weapon.html">Weapon</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a55f612de4bf737e76d0737f6be28959c">weapons</a></td></tr>
-<tr class="separator:a55f612de4bf737e76d0737f6be28959c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a264f3a095963a5b165268f12c2127ef1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a264f3a095963a5b165268f12c2127ef1">forwardDropOffset</a></td></tr>
-<tr class="separator:a264f3a095963a5b165268f12c2127ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd19c4f30931ba2b019d4c5c502d0609"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#acd19c4f30931ba2b019d4c5c502d0609">upDropOffset</a></td></tr>
-<tr class="separator:acd19c4f30931ba2b019d4c5c502d0609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67bbe9713cb7662992d81d80afad755b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a67bbe9713cb7662992d81d80afad755b">Flag</a></td></tr>
+<tr class="separator:a67bbe9713cb7662992d81d80afad755b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9fee36279484abcea23b76adaab112"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aff9fee36279484abcea23b76adaab112">HolderFlag</a></td></tr>
+<tr class="separator:aff9fee36279484abcea23b76adaab112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7fa014cf2cab86d0a8aa95a69d3b6af"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aa7fa014cf2cab86d0a8aa95a69d3b6af">flagObject</a></td></tr>
+<tr class="separator:aa7fa014cf2cab86d0a8aa95a69d3b6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -115,51 +106,17 @@ Properties</h2></td></tr>
 <tr class="separator:a2ca0d5eedf3b254513a041d50c13873c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0bf3b6faabf83cb2946b4f9b31fd033a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bf3b6faabf83cb2946b4f9b31fd033a">&#9670;&nbsp;</a></span>DropWeapon()</h2>
+<a id="a342ccf6ce8178c8d8837024a9905fb68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a342ccf6ce8178c8d8837024a9905fb68">&#9670;&nbsp;</a></span>IsHoldingFlag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Player.DropWeapon </td>
+          <td class="memname">void Player.IsHoldingFlag </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>weaponID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0611fe09c9c5e566b3e44e700088e1c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0611fe09c9c5e566b3e44e700088e1c2">&#9670;&nbsp;</a></span>GetWeaponTeamID()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Player.GetWeaponTeamID </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad27855b891d165f1df6e9496a644a837"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad27855b891d165f1df6e9496a644a837">&#9670;&nbsp;</a></span>IsHoldingFlag()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Player.IsHoldingFlag </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>flag</em> = <code>null</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -184,107 +141,43 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f273a6861204565dbb82548af33fb6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f273a6861204565dbb82548af33fb6a">&#9670;&nbsp;</a></span>PickUpWeapon()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Player.PickUpWeapon </td>
-          <td>(</td>
-          <td class="paramtype">GameObject&#160;</td>
-          <td class="paramname"><em>weaponObject</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Vector3&#160;</td>
-          <td class="paramname"><em>originalLocation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>teamID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>weaponID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>overrideLock</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa4572382376673761dff583ab1a92702"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4572382376673761dff583ab1a92702">&#9670;&nbsp;</a></span>ReturnWeapon()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Player.ReturnWeapon </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>weaponID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2f401ec967dd0b69552bdffe7c385f25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f401ec967dd0b69552bdffe7c385f25">&#9670;&nbsp;</a></span>SwitchWeapon()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Player.SwitchWeapon </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>weaponID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>overrideLock</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a264f3a095963a5b165268f12c2127ef1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a264f3a095963a5b165268f12c2127ef1">&#9670;&nbsp;</a></span>forwardDropOffset</h2>
+<a id="a67bbe9713cb7662992d81d80afad755b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67bbe9713cb7662992d81d80afad755b">&#9670;&nbsp;</a></span>Flag</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Player.forwardDropOffset</td>
+          <td class="memname">bool Player.Flag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7fa014cf2cab86d0a8aa95a69d3b6af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7fa014cf2cab86d0a8aa95a69d3b6af">&#9670;&nbsp;</a></span>flagObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject Player.flagObject</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff9fee36279484abcea23b76adaab112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff9fee36279484abcea23b76adaab112">&#9670;&nbsp;</a></span>HolderFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject Player.HolderFlag</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -309,34 +202,6 @@ Properties</h2></td></tr>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acd19c4f30931ba2b019d4c5c502d0609"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd19c4f30931ba2b019d4c5c502d0609">&#9670;&nbsp;</a></span>upDropOffset</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Player.upDropOffset</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a55f612de4bf737e76d0737f6be28959c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55f612de4bf737e76d0737f6be28959c">&#9670;&nbsp;</a></span>weapons</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;<a class="el" href="class_weapon.html">Weapon</a>&gt; Player.weapons</td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
