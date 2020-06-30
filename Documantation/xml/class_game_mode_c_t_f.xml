@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_game_mode_c_t_f" kind="class" language="C#" prot="public">
+    <compoundname>GameModeCTF</compoundname>
+    <basecompoundref refid="class_game_mode" prot="public" virt="non-virtual">GameMode</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_mode_c_t_f_1ada1b7e19143851ab0e63616b8e34f32f" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_flag" kindref="compound">Flag</ref> &gt;</type>
+        <definition>List&lt;Flag&gt; GameModeCTF.flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/GameModeCTF.cs" line="7" column="10" bodyfile="Assets/Scripts/GameModeCTF.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GameModeCTF</label>
+        <link refid="class_game_mode_c_t_f"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GameMode</label>
+        <link refid="class_game_mode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GameModeCTF</label>
+        <link refid="class_game_mode_c_t_f"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GameMode</label>
+        <link refid="class_game_mode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/GameModeCTF.cs" line="5" column="7" bodyfile="Assets/Scripts/GameModeCTF.cs" bodystart="6" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_game_mode_1a51fa8dc1faa35eb05bb7bcf481350b77" prot="public" virt="non-virtual"><scope>GameModeCTF</scope><name>AddScore</name></member>
+      <member refid="class_game_mode_c_t_f_1ada1b7e19143851ab0e63616b8e34f32f" prot="private" virt="non-virtual"><scope>GameModeCTF</scope><name>flags</name></member>
+      <member refid="class_game_mode_1a659e5c17c891f2b121ccd4b97ffc6d80" prot="public" virt="non-virtual"><scope>GameModeCTF</scope><name>SetUpGame</name></member>
+      <member refid="class_game_mode_1a2c37f70820f02881810142e28491b690" prot="public" virt="non-virtual"><scope>GameModeCTF</scope><name>spawnPoints</name></member>
+      <member refid="class_game_mode_1a0b73404423449651adacf8edfd8b8097" prot="protected" virt="non-virtual"><scope>GameModeCTF</scope><name>Start</name></member>
+      <member refid="class_game_mode_1ace6aaf348b691b5eebf27b60ad498264" prot="public" virt="non-virtual"><scope>GameModeCTF</scope><name>teamAmmount</name></member>
+      <member refid="class_game_mode_1a9a9aec7fbaf833aeb19f2298ecfbfbdf" prot="public" virt="non-virtual"><scope>GameModeCTF</scope><name>teams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

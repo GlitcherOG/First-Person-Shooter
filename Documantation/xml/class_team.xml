@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_team" kind="class" language="C#" prot="public">
+    <compoundname>Team</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_team_1abfd3ef234dc0044d8693d4e1b805636f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Team.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/GameMode.cs" line="37" column="16" bodyfile="Assets/Scripts/GameMode.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Scripts/GameMode.cs" line="35" column="7" bodyfile="Assets/Scripts/GameMode.cs" bodystart="36" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_team_1abfd3ef234dc0044d8693d4e1b805636f" prot="public" virt="non-virtual"><scope>Team</scope><name>score</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

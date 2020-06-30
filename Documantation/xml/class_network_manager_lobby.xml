@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_network_manager_lobby" kind="class" language="C#" prot="public">
+    <compoundname>NetworkManagerLobby</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NetworkManager</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_network_manager_lobby_1a689caef5a1ad41a2025bfa86dd1a0402" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NetworkManagerLobby.minPlayers</definition>
+        <argsstring></argsstring>
+        <name>minPlayers</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="13" column="18" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_manager_lobby_1a5d33c8970df4f93eefeac236a3d8f99d" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string NetworkManagerLobby.menuScene</definition>
+        <argsstring></argsstring>
+        <name>menuScene</name>
+        <initializer>= string.Empty</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="14" column="21" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_manager_lobby_1ae68e1372259b26799f94f56de41b11ad" prot="private" static="no" mutable="no">
+        <type><ref refid="class_network_room_player" kindref="compound">NetworkRoomPlayer</ref></type>
+        <definition>NetworkRoomPlayer NetworkManagerLobby.roomPlayerPrefab</definition>
+        <argsstring></argsstring>
+        <name>roomPlayerPrefab</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="17" column="32" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_manager_lobby_1a46df432eba375ddf0c0f7c49285526a2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_network_game_player" kindref="compound">NetworkGamePlayer</ref></type>
+        <definition>NetworkGamePlayer NetworkManagerLobby.gamePlayerPrefab</definition>
+        <argsstring></argsstring>
+        <name>gamePlayerPrefab</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="20" column="32" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_manager_lobby_1aa7ae93615f87690ed262e5a8538b93ec" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject NetworkManagerLobby.playerSpawnSystem</definition>
+        <argsstring></argsstring>
+        <name>playerSpawnSystem</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="21" column="25" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_network_manager_lobby_1a67f0c4a12b8c462d05be01b9910ac5fd" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action NetworkManagerLobby.onClientConnected</definition>
+        <argsstring></argsstring>
+        <name>onClientConnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="23" column="25" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_network_manager_lobby_1a896bc4053718afb737cce2ac9b6a686b" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action NetworkManagerLobby.onClientDisconnected</definition>
+        <argsstring></argsstring>
+        <name>onClientDisconnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="24" column="25" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_network_manager_lobby_1ad803ebbb27aa1906e2090c680b3b7d17" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action&lt; NetworkConnection &gt;</type>
+        <definition>Action&lt;NetworkConnection&gt; NetworkManagerLobby.onServerReadied</definition>
+        <argsstring></argsstring>
+        <name>onServerReadied</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="25" column="32" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_network_manager_lobby_1a1fe7757ab2d2aaa30580f0d30472be34" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_network_room_player" kindref="compound">NetworkRoomPlayer</ref> &gt;</type>
+        <definition>List&lt;NetworkRoomPlayer&gt; NetworkManagerLobby.RoomPlayers</definition>
+        <argsstring></argsstring>
+        <name>RoomPlayers</name>
+        <initializer>= new List&lt;<ref refid="class_network_room_player" kindref="compound">NetworkRoomPlayer</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="27" column="17" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_network_manager_lobby_1adc9ec65a897f6c8de267da9cd5378ab6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_network_game_player" kindref="compound">NetworkGamePlayer</ref> &gt;</type>
+        <definition>List&lt;NetworkGamePlayer&gt; NetworkManagerLobby.GamePlayers</definition>
+        <argsstring></argsstring>
+        <name>GamePlayers</name>
+        <initializer>= new List&lt;<ref refid="class_network_game_player" kindref="compound">NetworkGamePlayer</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="28" column="17" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_network_manager_lobby_1a9c4a42c75c2657638b390fc0719b0854" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.OnStartServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="30" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1a51900a340a734bfd83d2b06029d64173" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.OnStartClient</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="35" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="35" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1ac6c5dc10c0b53fa13dc5853a918a8db8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.OnClientConnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnClientConnect</name>
+        <param>
+          <type>NetworkConnection</type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="45" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1a750ee18b67abe7a736db0f349be4210f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.OnClientDisconnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnClientDisconnect</name>
+        <param>
+          <type>NetworkConnection</type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="52" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="52" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1a03dade20972d921dd031a168cad5bf73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.OnServerConnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnServerConnect</name>
+        <param>
+          <type>NetworkConnection</type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="59" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="59" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1ad80459f1b3c230ca993952e7e9ba6c48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.OnServerAddPlayer</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnServerAddPlayer</name>
+        <param>
+          <type>NetworkConnection</type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="75" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="75" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1a7e5035b28119c8a7e5cc40d0ff6d3961" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.OnServerDisconnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnServerDisconnect</name>
+        <param>
+          <type>NetworkConnection</type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="90" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="90" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1ab0abc178f440e2cd966e912095f11333" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.OnStopServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnStopServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="104" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1a9407abcd5cbdaccf6a4ca60e45fe43a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManagerLobby.NotifyPlayersOfReadyState</definition>
+        <argsstring>()</argsstring>
+        <name>NotifyPlayersOfReadyState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="109" column="17" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="109" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1a3fbb5e9b88afe6bb16577d3c84300a53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.OnServerReady</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnServerReady</name>
+        <param>
+          <type>NetworkConnection</type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="136" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="136" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1a9ab2dde8a95ccef4d9bfccedb8ab4732" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManagerLobby.StartGame</definition>
+        <argsstring>()</argsstring>
+        <name>StartGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="143" column="17" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="143" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1a401b2414ea4e901cd4565c5b3c98ad45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.ServerChangeScene</definition>
+        <argsstring>(string newSceneName)</argsstring>
+        <name>ServerChangeScene</name>
+        <param>
+          <type>string</type>
+          <declname>newSceneName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="157" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="157" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_lobby_1a038deab73157197c3bd1a687c4b9f95e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkManagerLobby.OnServerSceneChanged</definition>
+        <argsstring>(string sceneName)</argsstring>
+        <name>OnServerSceneChanged</name>
+        <param>
+          <type>string</type>
+          <declname>sceneName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="178" column="26" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="178" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_network_manager_lobby_1a7106b89ac4d5f88b464d80f46cebbfe2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NetworkManagerLobby.IsReadyToStart</definition>
+        <argsstring>()</argsstring>
+        <name>IsReadyToStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="117" column="18" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="117" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>NetworkManagerLobby</label>
+        <link refid="class_network_manager_lobby"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkManager</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>NetworkManagerLobby</label>
+        <link refid="class_network_manager_lobby"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkManager</label>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Network/NetworkManagerLobby.cs" line="11" column="7" bodyfile="Assets/Scripts/Network/NetworkManagerLobby.cs" bodystart="12" bodyend="186"/>
+    <listofallmembers>
+      <member refid="class_network_manager_lobby_1a46df432eba375ddf0c0f7c49285526a2" prot="private" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>gamePlayerPrefab</name></member>
+      <member refid="class_network_manager_lobby_1adc9ec65a897f6c8de267da9cd5378ab6" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>GamePlayers</name></member>
+      <member refid="class_network_manager_lobby_1a7106b89ac4d5f88b464d80f46cebbfe2" prot="private" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>IsReadyToStart</name></member>
+      <member refid="class_network_manager_lobby_1a5d33c8970df4f93eefeac236a3d8f99d" prot="private" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>menuScene</name></member>
+      <member refid="class_network_manager_lobby_1a689caef5a1ad41a2025bfa86dd1a0402" prot="private" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>minPlayers</name></member>
+      <member refid="class_network_manager_lobby_1a9407abcd5cbdaccf6a4ca60e45fe43a7" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>NotifyPlayersOfReadyState</name></member>
+      <member refid="class_network_manager_lobby_1ac6c5dc10c0b53fa13dc5853a918a8db8" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>OnClientConnect</name></member>
+      <member refid="class_network_manager_lobby_1a67f0c4a12b8c462d05be01b9910ac5fd" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>onClientConnected</name></member>
+      <member refid="class_network_manager_lobby_1a750ee18b67abe7a736db0f349be4210f" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>OnClientDisconnect</name></member>
+      <member refid="class_network_manager_lobby_1a896bc4053718afb737cce2ac9b6a686b" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>onClientDisconnected</name></member>
+      <member refid="class_network_manager_lobby_1ad80459f1b3c230ca993952e7e9ba6c48" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>OnServerAddPlayer</name></member>
+      <member refid="class_network_manager_lobby_1a03dade20972d921dd031a168cad5bf73" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>OnServerConnect</name></member>
+      <member refid="class_network_manager_lobby_1a7e5035b28119c8a7e5cc40d0ff6d3961" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>OnServerDisconnect</name></member>
+      <member refid="class_network_manager_lobby_1ad803ebbb27aa1906e2090c680b3b7d17" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>onServerReadied</name></member>
+      <member refid="class_network_manager_lobby_1a3fbb5e9b88afe6bb16577d3c84300a53" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>OnServerReady</name></member>
+      <member refid="class_network_manager_lobby_1a038deab73157197c3bd1a687c4b9f95e" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>OnServerSceneChanged</name></member>
+      <member refid="class_network_manager_lobby_1a51900a340a734bfd83d2b06029d64173" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>OnStartClient</name></member>
+      <member refid="class_network_manager_lobby_1a9c4a42c75c2657638b390fc0719b0854" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>OnStartServer</name></member>
+      <member refid="class_network_manager_lobby_1ab0abc178f440e2cd966e912095f11333" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>OnStopServer</name></member>
+      <member refid="class_network_manager_lobby_1aa7ae93615f87690ed262e5a8538b93ec" prot="private" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>playerSpawnSystem</name></member>
+      <member refid="class_network_manager_lobby_1ae68e1372259b26799f94f56de41b11ad" prot="private" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>roomPlayerPrefab</name></member>
+      <member refid="class_network_manager_lobby_1a1fe7757ab2d2aaa30580f0d30472be34" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>RoomPlayers</name></member>
+      <member refid="class_network_manager_lobby_1a401b2414ea4e901cd4565c5b3c98ad45" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>ServerChangeScene</name></member>
+      <member refid="class_network_manager_lobby_1a9ab2dde8a95ccef4d9bfccedb8ab4732" prot="public" virt="non-virtual"><scope>NetworkManagerLobby</scope><name>StartGame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

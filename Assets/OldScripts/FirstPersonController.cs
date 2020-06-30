@@ -38,39 +38,39 @@ private void Start()
     // Update is called once per frame
     void Update()
     {
-        //If jump is true and isgrounded is true
-        if (Input.GetButtonDown("Jump") && IsGrounded)
-        {
-            //Add jump to the rigid Velcity
-            rigd.velocity += new Vector3(0, jump, 0);
-        }
-        //Get speed form horizontal times move speed and vertical speed times move speed
-        Vector3 speed = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, rigd.velocity.y, (Input.GetAxis("Vertical") * moveSpeed));
-        //If running button is true and movemnt vertical is also true
-        if (Input.GetButton("Run") && Input.GetButton("Vertical"))
-        {
-            //Set the running to true and walking to false
-            anim.SetBool("Running", true);
-            anim.SetBool("Walking", false);
-            //Add run speed to the vector speed
-            speed += new Vector3(runSpeed, 0, 0);
-        }
-        //If the vertical is active but not running
-        else if (Input.GetButton("Vertical") && !Input.GetButton("Run"))
-        {
-            //Set walking to true and running to false
-            anim.SetBool("Walking", true);
-            anim.SetBool("Running", false);
-        }
-        else
-        {
-            //Set walking to false and running to true
-            anim.SetBool("Walking", false);
-            anim.SetBool("Running", false);
-        }
-        //Transform the rigid body velocity
-        rigd.velocity = transform.TransformDirection(speed);
-        //Change the health on the text UI
-        UIManager.Instance.Health.text = "Heath:" + heatlh.ToString();
+        //    //If jump is true and isgrounded is true
+        //    if (Input.GetButtonDown("Jump") && IsGrounded)
+        //    {
+        //        //Add jump to the rigid Velcity
+        //        rigd.velocity += new Vector3(0, jump, 0);
+        //    }
+        //    //Get speed form horizontal times move speed and vertical speed times move speed
+        //    Vector3 speed = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, rigd.velocity.y, (Input.GetAxis("Vertical") * moveSpeed));
+        //    //If running button is true and movemnt vertical is also true
+        //    if (Input.GetButton("Run") && Input.GetButton("Vertical"))
+        //    {
+        //        //Set the running to true and walking to false
+        //        anim.SetBool("Running", true);
+        //        anim.SetBool("Walking", false);
+        //        //Add run speed to the vector speed
+        //        speed += new Vector3(runSpeed, 0, 0);
+        //    }
+        //    //If the vertical is active but not running
+        //    else if (Input.GetButton("Vertical") && !Input.GetButton("Run"))
+        //    {
+        //        //Set walking to true and running to false
+        //        anim.SetBool("Walking", true);
+        //        anim.SetBool("Running", false);
+        //    }
+        //    else
+        //    {
+        //        //Set walking to false and running to true
+        //        anim.SetBool("Walking", false);
+        //        anim.SetBool("Running", false);
+        //    }
+        //    //Transform the rigid body velocity
+        //    rigd.velocity = transform.TransformDirection(speed);
+        //    //Change the health on the text UI
+        //    UIManager.Instance.Health.text = "Heath:" + heatlh.ToString();
     }
 }

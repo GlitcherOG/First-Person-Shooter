@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_game_mode" kind="class" language="C#" prot="public">
+    <compoundname>GameMode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_game_mode_c_t_f" prot="public" virt="non-virtual">GameModeCTF</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_game_mode_1ace6aaf348b691b5eebf27b60ad498264" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameMode.teamAmmount</definition>
+        <argsstring></argsstring>
+        <name>teamAmmount</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/GameMode.cs" line="8" column="16" bodyfile="Assets/Scripts/GameMode.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_mode_1a9a9aec7fbaf833aeb19f2298ecfbfbdf" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_team" kindref="compound">Team</ref> &gt;</type>
+        <definition>List&lt;Team&gt; GameMode.teams</definition>
+        <argsstring></argsstring>
+        <name>teams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/GameMode.cs" line="11" column="17" bodyfile="Assets/Scripts/GameMode.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_mode_1a2c37f70820f02881810142e28491b690" prot="public" static="no" mutable="no">
+        <type>List&lt; Transform &gt;</type>
+        <definition>List&lt;Transform&gt; GameMode.spawnPoints</definition>
+        <argsstring></argsstring>
+        <name>spawnPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/GameMode.cs" line="12" column="17" bodyfile="Assets/Scripts/GameMode.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_game_mode_1a0b73404423449651adacf8edfd8b8097" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameMode.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/GameMode.cs" line="14" column="20" bodyfile="Assets/Scripts/GameMode.cs" bodystart="14" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_mode_1a659e5c17c891f2b121ccd4b97ffc6d80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameMode.SetUpGame</definition>
+        <argsstring>()</argsstring>
+        <name>SetUpGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/GameMode.cs" line="20" column="17" bodyfile="Assets/Scripts/GameMode.cs" bodystart="20" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_mode_1a51fa8dc1faa35eb05bb7bcf481350b77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameMode.AddScore</definition>
+        <argsstring>(int teamID, int score)</argsstring>
+        <name>AddScore</name>
+        <param>
+          <type>int</type>
+          <declname>teamID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/GameMode.cs" line="28" column="17" bodyfile="Assets/Scripts/GameMode.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>GameModeCTF</label>
+        <link refid="class_game_mode_c_t_f"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GameMode</label>
+        <link refid="class_game_mode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GameMode</label>
+        <link refid="class_game_mode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/GameMode.cs" line="5" column="7" bodyfile="Assets/Scripts/GameMode.cs" bodystart="6" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_game_mode_1a51fa8dc1faa35eb05bb7bcf481350b77" prot="public" virt="non-virtual"><scope>GameMode</scope><name>AddScore</name></member>
+      <member refid="class_game_mode_1a659e5c17c891f2b121ccd4b97ffc6d80" prot="public" virt="non-virtual"><scope>GameMode</scope><name>SetUpGame</name></member>
+      <member refid="class_game_mode_1a2c37f70820f02881810142e28491b690" prot="public" virt="non-virtual"><scope>GameMode</scope><name>spawnPoints</name></member>
+      <member refid="class_game_mode_1a0b73404423449651adacf8edfd8b8097" prot="protected" virt="non-virtual"><scope>GameMode</scope><name>Start</name></member>
+      <member refid="class_game_mode_1ace6aaf348b691b5eebf27b60ad498264" prot="public" virt="non-virtual"><scope>GameMode</scope><name>teamAmmount</name></member>
+      <member refid="class_game_mode_1a9a9aec7fbaf833aeb19f2298ecfbfbdf" prot="public" virt="non-virtual"><scope>GameMode</scope><name>teams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

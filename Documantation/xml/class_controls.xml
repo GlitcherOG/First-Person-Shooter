@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_controls" kind="class" language="C#" prot="public">
+    <compoundname>Controls</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IInputActionCollection</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDisposable</basecompoundref>
+    <innerclass refid="interface_controls_1_1_i_player_actions" prot="public">Controls::IPlayerActions</innerclass>
+    <innerclass refid="struct_controls_1_1_player_actions" prot="public">Controls::PlayerActions</innerclass>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_controls_1a584d45d692cfc9d11dceb0eace0cc646" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>InputActionAsset</type>
+        <definition>InputActionAsset Controls.asset</definition>
+        <argsstring></argsstring>
+        <name>asset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="11" column="29" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_controls_1ac9fdfbfe32455a7f881b406684aa28dc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>InputBinding?</type>
+        <definition>InputBinding? Controls.bindingMask</definition>
+        <argsstring></argsstring>
+        <name>bindingMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="198" column="25" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="property" id="class_controls_1a99c0c0e747a753664752c7108adea123" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ReadOnlyArray&lt; InputDevice &gt;?</type>
+        <definition>ReadOnlyArray&lt;InputDevice&gt;? Controls.devices</definition>
+        <argsstring></argsstring>
+        <name>devices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="204" column="26" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="property" id="class_controls_1ab5699f19a5438823fea016c8448a7f27" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>InputControlScheme</type>
+        <definition>InputControlScheme Controls.KeyboardMouseScheme</definition>
+        <argsstring></argsstring>
+        <name>KeyboardMouseScheme</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="302" column="31" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="303" bodyend="309"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_controls_1a40efe45bbdbd6f62eeb243bfd91f5060" prot="public" static="no" mutable="no">
+        <type>ReadOnlyArray&lt; InputControlScheme &gt;</type>
+        <definition>ReadOnlyArray&lt;InputControlScheme&gt; Controls.controlSchemes</definition>
+        <argsstring></argsstring>
+        <name>controlSchemes</name>
+        <initializer>=&gt; asset.controlSchemes</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="210" column="26" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controls_1ae1e4e6997c5843d1d7f34507cb9cf30b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_controls_1_1_player_actions" kindref="compound">PlayerActions</ref></type>
+        <definition>PlayerActions Controls.Player</definition>
+        <argsstring></argsstring>
+        <name>Player</name>
+        <initializer>=&gt; new <ref refid="struct_controls_1_1_player_actions" kindref="compound">PlayerActions</ref>(this)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="300" column="26" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_controls_1a16c01677aa827e2f671f11e577f0ad40" prot="private" static="no" mutable="no">
+        <type>readonly InputActionMap</type>
+        <definition>readonly InputActionMap Controls.m_Player</definition>
+        <argsstring></argsstring>
+        <name>m_Player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="238" column="37" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controls_1ac54065f0d642d00396fece9e8a8bbe85" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_controls_1_1_i_player_actions" kindref="compound">IPlayerActions</ref></type>
+        <definition>IPlayerActions Controls.m_PlayerActionsCallbackInterface</definition>
+        <argsstring></argsstring>
+        <name>m_PlayerActionsCallbackInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="239" column="28" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controls_1ab8fdab83e7c796f6349841295f3bf8e7" prot="private" static="no" mutable="no">
+        <type>readonly InputAction</type>
+        <definition>readonly InputAction Controls.m_Player_Look</definition>
+        <argsstring></argsstring>
+        <name>m_Player_Look</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="240" column="34" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controls_1a17d0a11f173fa5e44305d9f4089c10df" prot="private" static="no" mutable="no">
+        <type>readonly InputAction</type>
+        <definition>readonly InputAction Controls.m_Player_Move</definition>
+        <argsstring></argsstring>
+        <name>m_Player_Move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="241" column="34" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controls_1ac7cfa16a92e4c2ba4dc4538eb34bf451" prot="private" static="no" mutable="no">
+        <type>readonly InputAction</type>
+        <definition>readonly InputAction Controls.m_Player_Pause</definition>
+        <argsstring></argsstring>
+        <name>m_Player_Pause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="242" column="34" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controls_1a2f6c89593583de6b7d4c55bb0e9cfc61" prot="private" static="no" mutable="no">
+        <type>readonly InputAction</type>
+        <definition>readonly InputAction Controls.m_Player_Fire</definition>
+        <argsstring></argsstring>
+        <name>m_Player_Fire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="243" column="34" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controls_1ae78ad424261e7e77f2e6a6cf2a99fffd" prot="private" static="no" mutable="no">
+        <type>readonly InputAction</type>
+        <definition>readonly InputAction Controls.m_Player_Reload</definition>
+        <argsstring></argsstring>
+        <name>m_Player_Reload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="244" column="34" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controls_1a4b2501222d79e01d6564caa77ffcb317" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Controls.m_KeyboardMouseSchemeIndex</definition>
+        <argsstring></argsstring>
+        <name>m_KeyboardMouseSchemeIndex</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="301" column="17" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controls_1a4295674e77bd87c0ae8304f2d2c6019f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Controls.Controls</definition>
+        <argsstring>()</argsstring>
+        <name>Controls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="12" column="12" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="12" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controls_1aa6865d9f932ae68bd0814c686baeb8ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controls.Dispose</definition>
+        <argsstring>()</argsstring>
+        <name>Dispose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="193" column="17" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controls_1a253f968412fe7fa422ba14c32f1c7017" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Controls.Contains</definition>
+        <argsstring>(InputAction action)</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>InputAction</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="212" column="17" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controls_1aa8ae5ba50f1e7a5409113c78a769e81a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator&lt; InputAction &gt;</type>
+        <definition>IEnumerator&lt;InputAction&gt; Controls.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="217" column="24" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controls_1ac9f8ebd56c2a475ceb26f13f9f027398" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controls.Enable</definition>
+        <argsstring>()</argsstring>
+        <name>Enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="227" column="17" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controls_1a2cbfe1781d8abc77daa6259bba5e7dce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controls.Disable</definition>
+        <argsstring>()</argsstring>
+        <name>Disable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="232" column="17" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="232" bodyend="235"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_controls_1a800ee5b630f998f694e23c6a89a049cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator IEnumerable.</type>
+        <definition>IEnumerator IEnumerable. Controls.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Input/Controls.cs" line="222" column="28" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="222" bodyend="225"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Controls</label>
+        <link refid="class_controls"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IDisposable</label>
+      </node>
+      <node id="2">
+        <label>IInputActionCollection</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Controls</label>
+        <link refid="class_controls"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Player</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IDisposable</label>
+      </node>
+      <node id="4">
+        <label>Controls.PlayerActions</label>
+        <link refid="struct_controls_1_1_player_actions"/>
+      </node>
+      <node id="2">
+        <label>IInputActionCollection</label>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Input/Controls.cs" line="9" column="7" bodyfile="Assets/Scripts/Input/Controls.cs" bodystart="10" bodyend="318"/>
+    <listofallmembers>
+      <member refid="class_controls_1a584d45d692cfc9d11dceb0eace0cc646" prot="public" virt="non-virtual"><scope>Controls</scope><name>asset</name></member>
+      <member refid="class_controls_1ac9fdfbfe32455a7f881b406684aa28dc" prot="public" virt="non-virtual"><scope>Controls</scope><name>bindingMask</name></member>
+      <member refid="class_controls_1a253f968412fe7fa422ba14c32f1c7017" prot="public" virt="non-virtual"><scope>Controls</scope><name>Contains</name></member>
+      <member refid="class_controls_1a4295674e77bd87c0ae8304f2d2c6019f" prot="public" virt="non-virtual"><scope>Controls</scope><name>Controls</name></member>
+      <member refid="class_controls_1a40efe45bbdbd6f62eeb243bfd91f5060" prot="public" virt="non-virtual"><scope>Controls</scope><name>controlSchemes</name></member>
+      <member refid="class_controls_1a99c0c0e747a753664752c7108adea123" prot="public" virt="non-virtual"><scope>Controls</scope><name>devices</name></member>
+      <member refid="class_controls_1a2cbfe1781d8abc77daa6259bba5e7dce" prot="public" virt="non-virtual"><scope>Controls</scope><name>Disable</name></member>
+      <member refid="class_controls_1aa6865d9f932ae68bd0814c686baeb8ff" prot="public" virt="non-virtual"><scope>Controls</scope><name>Dispose</name></member>
+      <member refid="class_controls_1ac9f8ebd56c2a475ceb26f13f9f027398" prot="public" virt="non-virtual"><scope>Controls</scope><name>Enable</name></member>
+      <member refid="class_controls_1aa8ae5ba50f1e7a5409113c78a769e81a" prot="public" virt="non-virtual"><scope>Controls</scope><name>GetEnumerator</name></member>
+      <member refid="class_controls_1a800ee5b630f998f694e23c6a89a049cf" prot="private" virt="non-virtual"><scope>Controls</scope><name>GetEnumerator</name></member>
+      <member refid="class_controls_1ab5699f19a5438823fea016c8448a7f27" prot="public" virt="non-virtual"><scope>Controls</scope><name>KeyboardMouseScheme</name></member>
+      <member refid="class_controls_1a4b2501222d79e01d6564caa77ffcb317" prot="private" virt="non-virtual"><scope>Controls</scope><name>m_KeyboardMouseSchemeIndex</name></member>
+      <member refid="class_controls_1a16c01677aa827e2f671f11e577f0ad40" prot="private" virt="non-virtual"><scope>Controls</scope><name>m_Player</name></member>
+      <member refid="class_controls_1a2f6c89593583de6b7d4c55bb0e9cfc61" prot="private" virt="non-virtual"><scope>Controls</scope><name>m_Player_Fire</name></member>
+      <member refid="class_controls_1ab8fdab83e7c796f6349841295f3bf8e7" prot="private" virt="non-virtual"><scope>Controls</scope><name>m_Player_Look</name></member>
+      <member refid="class_controls_1a17d0a11f173fa5e44305d9f4089c10df" prot="private" virt="non-virtual"><scope>Controls</scope><name>m_Player_Move</name></member>
+      <member refid="class_controls_1ac7cfa16a92e4c2ba4dc4538eb34bf451" prot="private" virt="non-virtual"><scope>Controls</scope><name>m_Player_Pause</name></member>
+      <member refid="class_controls_1ae78ad424261e7e77f2e6a6cf2a99fffd" prot="private" virt="non-virtual"><scope>Controls</scope><name>m_Player_Reload</name></member>
+      <member refid="class_controls_1ac54065f0d642d00396fece9e8a8bbe85" prot="private" virt="non-virtual"><scope>Controls</scope><name>m_PlayerActionsCallbackInterface</name></member>
+      <member refid="class_controls_1ae1e4e6997c5843d1d7f34507cb9cf30b" prot="public" virt="non-virtual"><scope>Controls</scope><name>Player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

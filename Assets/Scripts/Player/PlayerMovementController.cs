@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
+using Mirror.Examples.Basic;
 
 public class PlayerMovementController : NetworkBehaviour
 {
     [SerializeField] private float movementSpeed = 5f;
-    [SerializeField] private CharacterController controller;
+    [SerializeField] private CharacterController controller = null;
 
     private Vector2 previousInput;
 
-    private Controls controls;
-    private Controls Controls
+    private Controls playerControls;
+
+    private Controls PlayerControls
     {
         get
         {
-            if (controls != null) return controls;
-            return controls = new Controls();
+            if (playerControls != null) return playerControls;
+            return playerControls = new Controls();
         }
     }
 
@@ -24,25 +26,18 @@ public class PlayerMovementController : NetworkBehaviour
     {
         enabled = true;
 
-        Controls.Player.Move.performed += ctx => SetMovement(ctx.ReadValue<Vector2>());
-        Controls.Player.Move.canceled += ctx => ResetMovement();
+        PlayerControls.Player.Move.performed += ctx => SetMovement(ctx.ReadValue<Vector2>());
+        PlayerControls.Player.Move.canceled += ctx => ResetMovement();
     }
 
-    [ClientCallback]
-    private void OnEnable()
-    {
-        controls.Enable();
-    }
 
     [ClientCallback]
-
-    private void OnDisable()
-    {
-        controls.Disable();
-    }
+    private void OnEnable() => PlayerControls.Enable();
 
     [ClientCallback]
+    private void OnDisable() => PlayerControls.Disable();
 
+    [ClientCallback]
     private void Update()
     {
         Move();
@@ -59,6 +54,7 @@ public class PlayerMovementController : NetworkBehaviour
     {
         previousInput = Vector2.zero;
     }
+
     [Client]
     private void Move()
     {
@@ -68,7 +64,8 @@ public class PlayerMovementController : NetworkBehaviour
         right.y = 0f;
         forward.y = 0f;
 
-        Vector3 movement = right.normalized * previousInput.x + forward.normalized * previousInput.y;
+        Vector3 movement = right.normalized * previousInput.x
+            + forward.normalized * previousInput.y;
 
         controller.Move(movement * movementSpeed * Time.deltaTime);
     }

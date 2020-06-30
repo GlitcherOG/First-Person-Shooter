@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_player" kind="class" language="C#" prot="public">
+    <compoundname>Player</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NetworkBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_1a1cfe1922b69ef45ba80ae13f012d1ab9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player.playersTeamID</definition>
+        <argsstring></argsstring>
+        <name>playersTeamID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="9" column="10" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1abb85bb953194e45a233387defc2bcaa2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player.currentWeapon</definition>
+        <argsstring></argsstring>
+        <name>currentWeapon</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="14" column="9" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a30a9976db37dc7be8f5be2b968179e2d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player.lastWeapon</definition>
+        <argsstring></argsstring>
+        <name>lastWeapon</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="15" column="9" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_player_1a2ca0d5eedf3b254513a041d50c13873c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Player.teamID</definition>
+        <argsstring></argsstring>
+        <name>teamID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="10" column="16" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_player_1aff08b341c76fb1c361d87556dc552975" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_player" kindref="compound">Player</ref></type>
+        <definition>Player Player.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="11" column="26" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_1a55f612de4bf737e76d0737f6be28959c" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_weapon" kindref="compound">Weapon</ref> &gt;</type>
+        <definition>List&lt;Weapon&gt; Player.weapons</definition>
+        <argsstring></argsstring>
+        <name>weapons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="13" column="17" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a264f3a095963a5b165268f12c2127ef1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Player.forwardDropOffset</definition>
+        <argsstring></argsstring>
+        <name>forwardDropOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="16" column="18" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1acd19c4f30931ba2b019d4c5c502d0609" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Player.upDropOffset</definition>
+        <argsstring></argsstring>
+        <name>upDropOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="17" column="18" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_1a18c91668a6d6ef178eb5549ff32b6795" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Player.OnStartAuthority</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartAuthority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="19" column="26" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a2f273a6861204565dbb82548af33fb6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player.PickUpWeapon</definition>
+        <argsstring>(GameObject weaponObject, Vector3 originalLocation, int teamID, int weaponID, bool overrideLock=false)</argsstring>
+        <name>PickUpWeapon</name>
+        <param>
+          <type>GameObject</type>
+          <declname>weaponObject</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>originalLocation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>teamID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>weaponID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overrideLock</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="30" column="17" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a2f401ec967dd0b69552bdffe7c385f25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player.SwitchWeapon</definition>
+        <argsstring>(int weaponID, bool overrideLock=false)</argsstring>
+        <name>SwitchWeapon</name>
+        <param>
+          <type>int</type>
+          <declname>weaponID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overrideLock</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="37" column="17" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="37" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a0bf3b6faabf83cb2946b4f9b31fd033a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player.DropWeapon</definition>
+        <argsstring>(int weaponID)</argsstring>
+        <name>DropWeapon</name>
+        <param>
+          <type>int</type>
+          <declname>weaponID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="56" column="17" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="56" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1aa4572382376673761dff583ab1a92702" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player.ReturnWeapon</definition>
+        <argsstring>(int weaponID)</argsstring>
+        <name>ReturnWeapon</name>
+        <param>
+          <type>int</type>
+          <declname>weaponID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="74" column="17" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="74" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1ad27855b891d165f1df6e9496a644a837" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Player.IsHoldingFlag</definition>
+        <argsstring>()</argsstring>
+        <name>IsHoldingFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="88" column="17" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="88" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a0611fe09c9c5e566b3e44e700088e1c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Player.GetWeaponTeamID</definition>
+        <argsstring>()</argsstring>
+        <name>GetWeaponTeamID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="99" column="16" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="99" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_1aace80372e18e32fe177e295fe5d93ba8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/Player.cs" line="25" column="18" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="25" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Player/Player.cs" line="6" column="7" bodyfile="Assets/Scripts/Player/Player.cs" bodystart="7" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_player_1abb85bb953194e45a233387defc2bcaa2" prot="private" virt="non-virtual"><scope>Player</scope><name>currentWeapon</name></member>
+      <member refid="class_player_1a0bf3b6faabf83cb2946b4f9b31fd033a" prot="public" virt="non-virtual"><scope>Player</scope><name>DropWeapon</name></member>
+      <member refid="class_player_1a264f3a095963a5b165268f12c2127ef1" prot="public" virt="non-virtual"><scope>Player</scope><name>forwardDropOffset</name></member>
+      <member refid="class_player_1a0611fe09c9c5e566b3e44e700088e1c2" prot="public" virt="non-virtual"><scope>Player</scope><name>GetWeaponTeamID</name></member>
+      <member refid="class_player_1aff08b341c76fb1c361d87556dc552975" prot="public" virt="non-virtual"><scope>Player</scope><name>Instance</name></member>
+      <member refid="class_player_1ad27855b891d165f1df6e9496a644a837" prot="public" virt="non-virtual"><scope>Player</scope><name>IsHoldingFlag</name></member>
+      <member refid="class_player_1a30a9976db37dc7be8f5be2b968179e2d" prot="private" virt="non-virtual"><scope>Player</scope><name>lastWeapon</name></member>
+      <member refid="class_player_1a18c91668a6d6ef178eb5549ff32b6795" prot="public" virt="non-virtual"><scope>Player</scope><name>OnStartAuthority</name></member>
+      <member refid="class_player_1a2f273a6861204565dbb82548af33fb6a" prot="public" virt="non-virtual"><scope>Player</scope><name>PickUpWeapon</name></member>
+      <member refid="class_player_1a1cfe1922b69ef45ba80ae13f012d1ab9" prot="private" virt="non-virtual"><scope>Player</scope><name>playersTeamID</name></member>
+      <member refid="class_player_1aa4572382376673761dff583ab1a92702" prot="public" virt="non-virtual"><scope>Player</scope><name>ReturnWeapon</name></member>
+      <member refid="class_player_1a2f401ec967dd0b69552bdffe7c385f25" prot="public" virt="non-virtual"><scope>Player</scope><name>SwitchWeapon</name></member>
+      <member refid="class_player_1a2ca0d5eedf3b254513a041d50c13873c" prot="public" virt="non-virtual"><scope>Player</scope><name>teamID</name></member>
+      <member refid="class_player_1aace80372e18e32fe177e295fe5d93ba8" prot="private" virt="non-virtual"><scope>Player</scope><name>Update</name></member>
+      <member refid="class_player_1acd19c4f30931ba2b019d4c5c502d0609" prot="public" virt="non-virtual"><scope>Player</scope><name>upDropOffset</name></member>
+      <member refid="class_player_1a55f612de4bf737e76d0737f6be28959c" prot="public" virt="non-virtual"><scope>Player</scope><name>weapons</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

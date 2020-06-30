@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_efed5bf1f15259d309d2da632966cad0" kind="dir">
+    <compoundname>Assets/Scripts/Network</compoundname>
+    <innerfile refid="_join_lobby_menu_8cs">JoinLobbyMenu.cs</innerfile>
+    <innerfile refid="_networked_player_8cs">NetworkedPlayer.cs</innerfile>
+    <innerfile refid="_network_game_player_8cs">NetworkGamePlayer.cs</innerfile>
+    <innerfile refid="_network_manager_lobby_8cs">NetworkManagerLobby.cs</innerfile>
+    <innerfile refid="_network_room_player_8cs">NetworkRoomPlayer.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Scripts/Network/"/>
+  </compounddef>
+</doxygen>

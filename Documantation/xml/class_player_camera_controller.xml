@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_player_camera_controller" kind="class" language="C#" prot="public">
+    <compoundname>PlayerCameraController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NetworkBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_camera_controller_1a23b27bdf792ef9a0871d48c08bdbf72d" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 PlayerCameraController.maxFollowOffset</definition>
+        <argsstring></argsstring>
+        <name>maxFollowOffset</name>
+        <initializer>= new Vector2(-1f, 6f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="11" column="22" bodyfile="Assets/Scripts/Player/PlayerCameraController.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_camera_controller_1aa0cc1fadfd4e93f7077e7a60cb842101" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 PlayerCameraController.cameraVelocity</definition>
+        <argsstring></argsstring>
+        <name>cameraVelocity</name>
+        <initializer>= new Vector2(4f, 0.25f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="12" column="22" bodyfile="Assets/Scripts/Player/PlayerCameraController.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_camera_controller_1a3e239a2ed2fc710bc6218e595fef7f2f" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform PlayerCameraController.playerTransform</definition>
+        <argsstring></argsstring>
+        <name>playerTransform</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="13" column="24" bodyfile="Assets/Scripts/Player/PlayerCameraController.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_camera_controller_1a41a3ad7847b601be6f200ee8fe732293" prot="private" static="no" mutable="no">
+        <type>CinemachineVirtualCamera</type>
+        <definition>CinemachineVirtualCamera PlayerCameraController.virtualCamera</definition>
+        <argsstring></argsstring>
+        <name>virtualCamera</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="14" column="39" bodyfile="Assets/Scripts/Player/PlayerCameraController.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_camera_controller_1af6f8fd3e5e688f14d0f6395573cc0652" prot="private" static="no" mutable="no">
+        <type><ref refid="class_controls" kindref="compound">Controls</ref></type>
+        <definition>Controls PlayerCameraController.playerControls</definition>
+        <argsstring></argsstring>
+        <name>playerControls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="16" column="22" bodyfile="Assets/Scripts/Player/PlayerCameraController.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_camera_controller_1a0c481fb027354f6edabd5f78a3e279d9" prot="private" static="no" mutable="no">
+        <type>CinemachineTransposer</type>
+        <definition>CinemachineTransposer PlayerCameraController.transposer</definition>
+        <argsstring></argsstring>
+        <name>transposer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="25" column="35" bodyfile="Assets/Scripts/Player/PlayerCameraController.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_player_camera_controller_1a59774d697f6b3d21be6eb228eb5b7768" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_controls" kindref="compound">Controls</ref></type>
+        <definition>Controls PlayerCameraController.PlayerControls</definition>
+        <argsstring></argsstring>
+        <name>PlayerControls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="17" column="22" bodyfile="Assets/Scripts/Player/PlayerCameraController.cs" bodystart="18" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_camera_controller_1a9f4a52637ffd865e33ef93223d7c5d9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void PlayerCameraController.OnStartAuthority</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartAuthority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="27" column="26" bodyfile="Assets/Scripts/Player/PlayerCameraController.cs" bodystart="27" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_camera_controller_1a7d35e775e77f04ffb0e7b54be9be52e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerCameraController.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="39" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_camera_controller_1a02a3567dfd8669cd0566c6a65d115003" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerCameraController.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="42" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_camera_controller_1a77530b6f8e43a212d5d8da0a13ad7bea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerCameraController.Look</definition>
+        <argsstring>(Vector2 lookAxis)</argsstring>
+        <name>Look</name>
+        <param>
+          <type>Vector2</type>
+          <declname>lookAxis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="44" column="18" bodyfile="Assets/Scripts/Player/PlayerCameraController.cs" bodystart="44" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerCameraController</label>
+        <link refid="class_player_camera_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerCameraController</label>
+        <link refid="class_player_camera_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Player/PlayerCameraController.cs" line="8" column="7" bodyfile="Assets/Scripts/Player/PlayerCameraController.cs" bodystart="9" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_player_camera_controller_1aa0cc1fadfd4e93f7077e7a60cb842101" prot="private" virt="non-virtual"><scope>PlayerCameraController</scope><name>cameraVelocity</name></member>
+      <member refid="class_player_camera_controller_1a77530b6f8e43a212d5d8da0a13ad7bea" prot="private" virt="non-virtual"><scope>PlayerCameraController</scope><name>Look</name></member>
+      <member refid="class_player_camera_controller_1a23b27bdf792ef9a0871d48c08bdbf72d" prot="private" virt="non-virtual"><scope>PlayerCameraController</scope><name>maxFollowOffset</name></member>
+      <member refid="class_player_camera_controller_1a02a3567dfd8669cd0566c6a65d115003" prot="private" virt="non-virtual"><scope>PlayerCameraController</scope><name>OnDisable</name></member>
+      <member refid="class_player_camera_controller_1a7d35e775e77f04ffb0e7b54be9be52e9" prot="private" virt="non-virtual"><scope>PlayerCameraController</scope><name>OnEnable</name></member>
+      <member refid="class_player_camera_controller_1a9f4a52637ffd865e33ef93223d7c5d9f" prot="public" virt="non-virtual"><scope>PlayerCameraController</scope><name>OnStartAuthority</name></member>
+      <member refid="class_player_camera_controller_1af6f8fd3e5e688f14d0f6395573cc0652" prot="private" virt="non-virtual"><scope>PlayerCameraController</scope><name>playerControls</name></member>
+      <member refid="class_player_camera_controller_1a59774d697f6b3d21be6eb228eb5b7768" prot="private" virt="non-virtual"><scope>PlayerCameraController</scope><name>PlayerControls</name></member>
+      <member refid="class_player_camera_controller_1a3e239a2ed2fc710bc6218e595fef7f2f" prot="private" virt="non-virtual"><scope>PlayerCameraController</scope><name>playerTransform</name></member>
+      <member refid="class_player_camera_controller_1a0c481fb027354f6edabd5f78a3e279d9" prot="private" virt="non-virtual"><scope>PlayerCameraController</scope><name>transposer</name></member>
+      <member refid="class_player_camera_controller_1a41a3ad7847b601be6f200ee8fe732293" prot="private" virt="non-virtual"><scope>PlayerCameraController</scope><name>virtualCamera</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

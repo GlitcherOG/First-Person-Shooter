@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_player_movement_controller" kind="class" language="C#" prot="public">
+    <compoundname>PlayerMovementController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NetworkBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_movement_controller_1aebb22fd0a2d9a464d8e07e7bec69ac8b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerMovementController.movementSpeed</definition>
+        <argsstring></argsstring>
+        <name>movementSpeed</name>
+        <initializer>= 5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="9" column="20" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1adeaa4e8c0a9c4339f52b74d12f80f130" prot="private" static="no" mutable="no">
+        <type>CharacterController</type>
+        <definition>CharacterController PlayerMovementController.controller</definition>
+        <argsstring></argsstring>
+        <name>controller</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="10" column="34" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1a37cda0830de686c915d66dd5b5c4aedc" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 PlayerMovementController.previousInput</definition>
+        <argsstring></argsstring>
+        <name>previousInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="12" column="21" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1a77e9d7cace63b19392c203230c1c367a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_controls" kindref="compound">Controls</ref></type>
+        <definition>Controls PlayerMovementController.playerControls</definition>
+        <argsstring></argsstring>
+        <name>playerControls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="14" column="22" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_player_movement_controller_1a185980c8ab4a2a679f35e31bc4414681" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_controls" kindref="compound">Controls</ref></type>
+        <definition>Controls PlayerMovementController.PlayerControls</definition>
+        <argsstring></argsstring>
+        <name>PlayerControls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="16" column="22" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="17" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_movement_controller_1ae4816af89e84665175117df51c1c748f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void PlayerMovementController.OnStartAuthority</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartAuthority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="25" column="26" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="25" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_movement_controller_1abc22f01102295b0946a8ea3d082e6c90" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="35" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_movement_controller_1ab7eabf44589720175f80e7b34c819b88" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="38" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_movement_controller_1ae5fe1e8776604ded63eb25e191d5fe7b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="41" column="18" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_movement_controller_1ab05260e2dd627a667e233dd03468fc2d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.SetMovement</definition>
+        <argsstring>(Vector2 movement)</argsstring>
+        <name>SetMovement</name>
+        <param>
+          <type>Vector2</type>
+          <declname>movement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="47" column="18" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_movement_controller_1ad6e0319db69d80879809a63e3545bee0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.ResetMovement</definition>
+        <argsstring>()</argsstring>
+        <name>ResetMovement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="53" column="18" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_movement_controller_1a2fc6ecd7c77efe1766bac1ddbb3fd113" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.Move</definition>
+        <argsstring>()</argsstring>
+        <name>Move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="59" column="18" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="59" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerMovementController</label>
+        <link refid="class_player_movement_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerMovementController</label>
+        <link refid="class_player_movement_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Player/PlayerMovementController.cs" line="7" column="7" bodyfile="Assets/Scripts/Player/PlayerMovementController.cs" bodystart="8" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_player_movement_controller_1adeaa4e8c0a9c4339f52b74d12f80f130" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>controller</name></member>
+      <member refid="class_player_movement_controller_1a2fc6ecd7c77efe1766bac1ddbb3fd113" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>Move</name></member>
+      <member refid="class_player_movement_controller_1aebb22fd0a2d9a464d8e07e7bec69ac8b" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>movementSpeed</name></member>
+      <member refid="class_player_movement_controller_1ab7eabf44589720175f80e7b34c819b88" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>OnDisable</name></member>
+      <member refid="class_player_movement_controller_1abc22f01102295b0946a8ea3d082e6c90" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>OnEnable</name></member>
+      <member refid="class_player_movement_controller_1ae4816af89e84665175117df51c1c748f" prot="public" virt="non-virtual"><scope>PlayerMovementController</scope><name>OnStartAuthority</name></member>
+      <member refid="class_player_movement_controller_1a77e9d7cace63b19392c203230c1c367a" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>playerControls</name></member>
+      <member refid="class_player_movement_controller_1a185980c8ab4a2a679f35e31bc4414681" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>PlayerControls</name></member>
+      <member refid="class_player_movement_controller_1a37cda0830de686c915d66dd5b5c4aedc" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>previousInput</name></member>
+      <member refid="class_player_movement_controller_1ad6e0319db69d80879809a63e3545bee0" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>ResetMovement</name></member>
+      <member refid="class_player_movement_controller_1ab05260e2dd627a667e233dd03468fc2d" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>SetMovement</name></member>
+      <member refid="class_player_movement_controller_1ae5fe1e8776604ded63eb25e191d5fe7b" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1521,6 +1521,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1591,6 +1592,7 @@ MonoBehaviour:
   runSpeed: 0
   jump: 10
   model: {fileID: 2491437676837116091}
+  heatlh: 100
   anim: {fileID: 8809611812588013522}
 --- !u!114 &5886961502919962022
 MonoBehaviour:
@@ -1620,8 +1622,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028d7fefb731b7643a2f93bd9e2bc68a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  primary: {fileID: 0}
+  secondary: {fileID: 0}
   slotActive: 0
   holder: {fileID: 5886961502269581089}
+  active: {fileID: 0}
   detail: {fileID: 3007121860701936438, guid: 92228bf9c1ee4f24d8d43e39c5266b32, type: 3}
   fire: 0
   cooldown: 1
@@ -1965,6 +1970,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

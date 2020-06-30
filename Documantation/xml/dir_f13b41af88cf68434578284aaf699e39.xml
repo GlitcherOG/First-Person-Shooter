@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_f13b41af88cf68434578284aaf699e39" kind="dir">
+    <compoundname>Assets/Scripts</compoundname>
+    <innerdir refid="dir_82bf5dcf5f07f0970851629866abc1ad">Assets/Scripts/Input</innerdir>
+    <innerdir refid="dir_efed5bf1f15259d309d2da632966cad0">Assets/Scripts/Network</innerdir>
+    <innerdir refid="dir_c7fafc839a0585736011c21bdabf2a37">Assets/Scripts/Player</innerdir>
+    <innerfile refid="_capture_zone_8cs">CaptureZone.cs</innerfile>
+    <innerfile refid="_flag_8cs">Flag.cs</innerfile>
+    <innerfile refid="_game_manager_8cs">GameManager.cs</innerfile>
+    <innerfile refid="_game_mode_8cs">GameMode.cs</innerfile>
+    <innerfile refid="_game_mode_c_t_f_8cs">GameModeCTF.cs</innerfile>
+    <innerfile refid="_main_menu_8cs">MainMenu.cs</innerfile>
+    <innerfile refid="_pause_menu_8cs">PauseMenu.cs</innerfile>
+    <innerfile refid="_settings_8cs">Settings.cs</innerfile>
+    <innerfile refid="_settings_binary_8cs">SettingsBinary.cs</innerfile>
+    <innerfile refid="_settings_data_8cs">SettingsData.cs</innerfile>
+    <innerfile refid="_weapon_8cs">Weapon.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Scripts/"/>
+  </compounddef>
+</doxygen>

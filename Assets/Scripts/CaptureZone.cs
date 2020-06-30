@@ -11,7 +11,7 @@ public class CaptureZone : MonoBehaviour
     {
         gameModeCTF = FindObjectOfType<GameModeCTF>();
 
-        if(gameModeCTF == null)
+        if (gameModeCTF == null)
         {
             Debug.LogError("Could not find GameModeCTF");
         }
@@ -21,7 +21,7 @@ public class CaptureZone : MonoBehaviour
     {
         Player player = other.GetComponent<Player>();
 
-        if(player != null && gameModeCTF != null)
+        if (player != null && gameModeCTF != null)
         {
             if (player.GetWeaponTeamID() != teamID)
             {

@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="class_capture_zone" kind="class"><name>CaptureZone</name>
+    <member refid="class_capture_zone_1a1294dd07787e0762a99e53bd1638e71e" kind="variable"><name>teamID</name></member>
+    <member refid="class_capture_zone_1a640194681ec25ea153f22f648deedbf3" kind="variable"><name>gameModeCTF</name></member>
+    <member refid="class_capture_zone_1a5a7db0e2c2eb959022efd5dff8afffbc" kind="function"><name>Start</name></member>
+    <member refid="class_capture_zone_1ac222b9cc1c1581b48ed3e1400c0670a5" kind="function"><name>OnTriggerEnter</name></member>
+  </compound>
+  <compound refid="class_controls" kind="class"><name>Controls</name>
+    <member refid="class_controls_1a584d45d692cfc9d11dceb0eace0cc646" kind="property"><name>asset</name></member>
+    <member refid="class_controls_1ac9fdfbfe32455a7f881b406684aa28dc" kind="property"><name>bindingMask</name></member>
+    <member refid="class_controls_1a99c0c0e747a753664752c7108adea123" kind="property"><name>devices</name></member>
+    <member refid="class_controls_1ab5699f19a5438823fea016c8448a7f27" kind="property"><name>KeyboardMouseScheme</name></member>
+    <member refid="class_controls_1a40efe45bbdbd6f62eeb243bfd91f5060" kind="variable"><name>controlSchemes</name></member>
+    <member refid="class_controls_1ae1e4e6997c5843d1d7f34507cb9cf30b" kind="variable"><name>Player</name></member>
+    <member refid="class_controls_1a16c01677aa827e2f671f11e577f0ad40" kind="variable"><name>m_Player</name></member>
+    <member refid="class_controls_1ac54065f0d642d00396fece9e8a8bbe85" kind="variable"><name>m_PlayerActionsCallbackInterface</name></member>
+    <member refid="class_controls_1ab8fdab83e7c796f6349841295f3bf8e7" kind="variable"><name>m_Player_Look</name></member>
+    <member refid="class_controls_1a17d0a11f173fa5e44305d9f4089c10df" kind="variable"><name>m_Player_Move</name></member>
+    <member refid="class_controls_1ac7cfa16a92e4c2ba4dc4538eb34bf451" kind="variable"><name>m_Player_Pause</name></member>
+    <member refid="class_controls_1a2f6c89593583de6b7d4c55bb0e9cfc61" kind="variable"><name>m_Player_Fire</name></member>
+    <member refid="class_controls_1ae78ad424261e7e77f2e6a6cf2a99fffd" kind="variable"><name>m_Player_Reload</name></member>
+    <member refid="class_controls_1a4b2501222d79e01d6564caa77ffcb317" kind="variable"><name>m_KeyboardMouseSchemeIndex</name></member>
+    <member refid="class_controls_1a4295674e77bd87c0ae8304f2d2c6019f" kind="function"><name>Controls</name></member>
+    <member refid="class_controls_1aa6865d9f932ae68bd0814c686baeb8ff" kind="function"><name>Dispose</name></member>
+    <member refid="class_controls_1a253f968412fe7fa422ba14c32f1c7017" kind="function"><name>Contains</name></member>
+    <member refid="class_controls_1aa8ae5ba50f1e7a5409113c78a769e81a" kind="function"><name>GetEnumerator</name></member>
+    <member refid="class_controls_1ac9f8ebd56c2a475ceb26f13f9f027398" kind="function"><name>Enable</name></member>
+    <member refid="class_controls_1a2cbfe1781d8abc77daa6259bba5e7dce" kind="function"><name>Disable</name></member>
+    <member refid="class_controls_1a800ee5b630f998f694e23c6a89a049cf" kind="function"><name>GetEnumerator</name></member>
+  </compound>
+  <compound refid="class_flag" kind="class"><name>Flag</name>
+    <member refid="class_flag_1a78ac5264128e4720f9452da3a55346a0" kind="variable"><name>teamID</name></member>
+    <member refid="class_flag_1a95a2e6a6ec14f64b522525f91f1412dc" kind="variable"><name>originalLocation</name></member>
+    <member refid="class_flag_1a8496bac93eb674c58bb1a3cb4458fad1" kind="function"><name>Start</name></member>
+    <member refid="class_flag_1ab4bcc71abc0c9ed761c6d350e9fddd92" kind="function"><name>OnTriggerEnter</name></member>
+  </compound>
+  <compound refid="class_game_manager" kind="class"><name>GameManager</name>
+    <member refid="class_game_manager_1ae32ea32b93c617ddd8e36c06662018fe" kind="function"><name>ChangeScene</name></member>
+    <member refid="class_game_manager_1a8cec87903cc4b66f1fdee1967e86ba51" kind="function"><name>ExitGame</name></member>
+  </compound>
+  <compound refid="class_game_mode" kind="class"><name>GameMode</name>
+    <member refid="class_game_mode_1ace6aaf348b691b5eebf27b60ad498264" kind="variable"><name>teamAmmount</name></member>
+    <member refid="class_game_mode_1a9a9aec7fbaf833aeb19f2298ecfbfbdf" kind="variable"><name>teams</name></member>
+    <member refid="class_game_mode_1a2c37f70820f02881810142e28491b690" kind="variable"><name>spawnPoints</name></member>
+    <member refid="class_game_mode_1a0b73404423449651adacf8edfd8b8097" kind="function"><name>Start</name></member>
+    <member refid="class_game_mode_1a659e5c17c891f2b121ccd4b97ffc6d80" kind="function"><name>SetUpGame</name></member>
+    <member refid="class_game_mode_1a51fa8dc1faa35eb05bb7bcf481350b77" kind="function"><name>AddScore</name></member>
+  </compound>
+  <compound refid="class_game_mode_c_t_f" kind="class"><name>GameModeCTF</name>
+    <member refid="class_game_mode_c_t_f_1ada1b7e19143851ab0e63616b8e34f32f" kind="variable"><name>flags</name></member>
+  </compound>
+  <compound refid="interface_controls_1_1_i_player_actions" kind="interface"><name>Controls::IPlayerActions</name>
+    <member refid="interface_controls_1_1_i_player_actions_1a30f5d762131cfb7e9c5e2b030c2f0006" kind="function"><name>OnLook</name></member>
+    <member refid="interface_controls_1_1_i_player_actions_1aafca9249266ce178bcf24ddadfec5fd0" kind="function"><name>OnMove</name></member>
+    <member refid="interface_controls_1_1_i_player_actions_1a2036dd6511d400ba3aa2317aad34f69e" kind="function"><name>OnPause</name></member>
+    <member refid="interface_controls_1_1_i_player_actions_1a67093c8ff7d25bc1bd39f02a62cfb96f" kind="function"><name>OnFire</name></member>
+    <member refid="interface_controls_1_1_i_player_actions_1aeecfe62fdf0e3d0914b341af1bf2b3fd" kind="function"><name>OnReload</name></member>
+  </compound>
+  <compound refid="class_join_lobby_menu" kind="class"><name>JoinLobbyMenu</name>
+    <member refid="class_join_lobby_menu_1ac1051ceee7e79bc1b93e3813d2b08a03" kind="variable"><name>networkManager</name></member>
+    <member refid="class_join_lobby_menu_1a8591da40ee80a2be39d4eb401ebf2e2b" kind="variable"><name>landingPagePanel</name></member>
+    <member refid="class_join_lobby_menu_1ae9255796b00109304866822e15b4dca5" kind="variable"><name>ipAddressInputField</name></member>
+    <member refid="class_join_lobby_menu_1a771c20cd7064cfe5184ba9ed788e3e82" kind="variable"><name>joinButton</name></member>
+    <member refid="class_join_lobby_menu_1a66bdac4b4dc5b19f326602568681f69e" kind="function"><name>Start</name></member>
+    <member refid="class_join_lobby_menu_1ae8fd5c76e8f5bfe85463d5493e12aefe" kind="function"><name>JoinLobby</name></member>
+    <member refid="class_join_lobby_menu_1aaad3d08c4a5cd8cd74f9c46456e6cd49" kind="function"><name>OnEnable</name></member>
+    <member refid="class_join_lobby_menu_1a95483e355354f8da7992b4ae9dd3e49c" kind="function"><name>OnDisable</name></member>
+    <member refid="class_join_lobby_menu_1a8264500a5bc73b11d22635fa91abff0e" kind="function"><name>HandleClientConnected</name></member>
+    <member refid="class_join_lobby_menu_1aeff0a3c6f9c0f2fae2229d0b3bb7d510" kind="function"><name>HandleClientDisconnected</name></member>
+  </compound>
+  <compound refid="class_main_menu" kind="class"><name>MainMenu</name>
+    <member refid="class_main_menu_1afbe7f70982c4e41ec424e51d142069eb" kind="variable"><name>networkManager</name></member>
+    <member refid="class_main_menu_1a038b18e49637cff0939d42f3737d5244" kind="variable"><name>landingPagePanel</name></member>
+    <member refid="class_main_menu_1ad629921d8cbec1c1bf97e6bc6ad65902" kind="function"><name>Start</name></member>
+    <member refid="class_main_menu_1ae438ebbc90b506531ebe11b5e3a25f10" kind="function"><name>HostLobby</name></member>
+  </compound>
+  <compound refid="class_networked_player" kind="class"><name>NetworkedPlayer</name>
+    <member refid="class_networked_player_1a2635e7be8cd599c63cc62fa3a21c70c5" kind="variable"><name>movement</name></member>
+    <member refid="class_networked_player_1a5507f573b7062f8d0a8e3652d994375b" kind="function"><name>Update</name></member>
+    <member refid="class_networked_player_1a29752da427ea5c74dad1e81a3fcef3cf" kind="function"><name>CmdMove</name></member>
+    <member refid="class_networked_player_1ad96eab6b6a2fe1bb5252eab65d72c2da" kind="function"><name>RpcMove</name></member>
+  </compound>
+  <compound refid="class_network_game_player" kind="class"><name>NetworkGamePlayer</name>
+    <member refid="class_network_game_player_1ace3422b329f6f01d58ff431ae2611d62" kind="variable"><name>displayName</name></member>
+    <member refid="class_network_game_player_1a3a9599462330b760249a5c417fece16c" kind="variable"><name>room</name></member>
+    <member refid="class_network_game_player_1a708fb6d7f6ef78a185b40efb2fcfb584" kind="property"><name>Room</name></member>
+    <member refid="class_network_game_player_1a8b3a5f1dccf6410c4692040bd6b56e8e" kind="function"><name>OnStartClient</name></member>
+    <member refid="class_network_game_player_1a886f870bea44b39c35c29515a94c0efe" kind="function"><name>OnNetworkDestroy</name></member>
+    <member refid="class_network_game_player_1a4981f3917db752ccf8eeb7652b896306" kind="function"><name>SetDisplayName</name></member>
+  </compound>
+  <compound refid="class_network_manager_lobby" kind="class"><name>NetworkManagerLobby</name>
+    <member refid="class_network_manager_lobby_1a689caef5a1ad41a2025bfa86dd1a0402" kind="variable"><name>minPlayers</name></member>
+    <member refid="class_network_manager_lobby_1a5d33c8970df4f93eefeac236a3d8f99d" kind="variable"><name>menuScene</name></member>
+    <member refid="class_network_manager_lobby_1ae68e1372259b26799f94f56de41b11ad" kind="variable"><name>roomPlayerPrefab</name></member>
+    <member refid="class_network_manager_lobby_1a46df432eba375ddf0c0f7c49285526a2" kind="variable"><name>gamePlayerPrefab</name></member>
+    <member refid="class_network_manager_lobby_1aa7ae93615f87690ed262e5a8538b93ec" kind="variable"><name>playerSpawnSystem</name></member>
+    <member refid="class_network_manager_lobby_1a67f0c4a12b8c462d05be01b9910ac5fd" kind="event"><name>onClientConnected</name></member>
+    <member refid="class_network_manager_lobby_1a896bc4053718afb737cce2ac9b6a686b" kind="event"><name>onClientDisconnected</name></member>
+    <member refid="class_network_manager_lobby_1ad803ebbb27aa1906e2090c680b3b7d17" kind="event"><name>onServerReadied</name></member>
+    <member refid="class_network_manager_lobby_1a1fe7757ab2d2aaa30580f0d30472be34" kind="property"><name>RoomPlayers</name></member>
+    <member refid="class_network_manager_lobby_1adc9ec65a897f6c8de267da9cd5378ab6" kind="property"><name>GamePlayers</name></member>
+    <member refid="class_network_manager_lobby_1a9c4a42c75c2657638b390fc0719b0854" kind="function"><name>OnStartServer</name></member>
+    <member refid="class_network_manager_lobby_1a51900a340a734bfd83d2b06029d64173" kind="function"><name>OnStartClient</name></member>
+    <member refid="class_network_manager_lobby_1ac6c5dc10c0b53fa13dc5853a918a8db8" kind="function"><name>OnClientConnect</name></member>
+    <member refid="class_network_manager_lobby_1a750ee18b67abe7a736db0f349be4210f" kind="function"><name>OnClientDisconnect</name></member>
+    <member refid="class_network_manager_lobby_1a03dade20972d921dd031a168cad5bf73" kind="function"><name>OnServerConnect</name></member>
+    <member refid="class_network_manager_lobby_1ad80459f1b3c230ca993952e7e9ba6c48" kind="function"><name>OnServerAddPlayer</name></member>
+    <member refid="class_network_manager_lobby_1a7e5035b28119c8a7e5cc40d0ff6d3961" kind="function"><name>OnServerDisconnect</name></member>
+    <member refid="class_network_manager_lobby_1ab0abc178f440e2cd966e912095f11333" kind="function"><name>OnStopServer</name></member>
+    <member refid="class_network_manager_lobby_1a9407abcd5cbdaccf6a4ca60e45fe43a7" kind="function"><name>NotifyPlayersOfReadyState</name></member>
+    <member refid="class_network_manager_lobby_1a3fbb5e9b88afe6bb16577d3c84300a53" kind="function"><name>OnServerReady</name></member>
+    <member refid="class_network_manager_lobby_1a9ab2dde8a95ccef4d9bfccedb8ab4732" kind="function"><name>StartGame</name></member>
+    <member refid="class_network_manager_lobby_1a401b2414ea4e901cd4565c5b3c98ad45" kind="function"><name>ServerChangeScene</name></member>
+    <member refid="class_network_manager_lobby_1a038deab73157197c3bd1a687c4b9f95e" kind="function"><name>OnServerSceneChanged</name></member>
+    <member refid="class_network_manager_lobby_1a7106b89ac4d5f88b464d80f46cebbfe2" kind="function"><name>IsReadyToStart</name></member>
+  </compound>
+  <compound refid="class_network_room_player" kind="class"><name>NetworkRoomPlayer</name>
+    <member refid="class_network_room_player_1ac311bf56a14f104c346a4acfdbab42cf" kind="variable"><name>lobbyUI</name></member>
+    <member refid="class_network_room_player_1a784ea2ba3f34f9ddeee7bc7d461cd897" kind="variable"><name>playerNameTexts</name></member>
+    <member refid="class_network_room_player_1a4994d9bb126fd51ea91bf1fdb0b530e9" kind="variable"><name>playerReadyTexts</name></member>
+    <member refid="class_network_room_player_1a2e218f5a7a252ce1df25bdb8c7be6a88" kind="variable"><name>startGameButton</name></member>
+    <member refid="class_network_room_player_1a59391575d835e11e060aa3f687015306" kind="variable"><name>isLeader</name></member>
+    <member refid="class_network_room_player_1ac1fc93c3faa715eaabd10ae298b1a7df" kind="variable"><name>room</name></member>
+    <member refid="class_network_room_player_1a5e37be71ec1451f9484ab2920cf4de8b" kind="variable"><name>DisplayName</name></member>
+    <member refid="class_network_room_player_1a585bec84846e4c124dda78491633d4bf" kind="variable"><name>IsReady</name></member>
+    <member refid="class_network_room_player_1a89d70fada2f0bd206c46802796db9761" kind="property"><name>IsLeader</name></member>
+    <member refid="class_network_room_player_1a868889e14a285eaed43f43492ad60551" kind="property"><name>Room</name></member>
+    <member refid="class_network_room_player_1aa9fc393ccb1e6b87beb1220c11ecf5ce" kind="function"><name>OnStartAuthority</name></member>
+    <member refid="class_network_room_player_1a754b3344f6a5d8139666f1fbd1af5eb2" kind="function"><name>OnStartClient</name></member>
+    <member refid="class_network_room_player_1a7f515ecb5d7c2d47a258d887348ad1df" kind="function"><name>OnNetworkDestroy</name></member>
+    <member refid="class_network_room_player_1acd831b0544de903c40cfb45173c7b227" kind="function"><name>HandleDisplayNameChanged</name></member>
+    <member refid="class_network_room_player_1a2db644a408d4ec01933acfd294d5c06f" kind="function"><name>HandleReadyStatusChanged</name></member>
+    <member refid="class_network_room_player_1adb6767e3c17c0485e20ff0af2f5af7ed" kind="function"><name>HandleReadyToStart</name></member>
+    <member refid="class_network_room_player_1ae2ddf228787af33d7cd7986c43f3caba" kind="function"><name>CmdReadyUp</name></member>
+    <member refid="class_network_room_player_1a3e51c63181d4cfe15dc3d318e5f3da05" kind="function"><name>CmdStartGame</name></member>
+    <member refid="class_network_room_player_1a91d628aad6fa2a03ee4eb13696c136b8" kind="function"><name>UpdateDisplay</name></member>
+    <member refid="class_network_room_player_1a10443d0048994105f50d25263be5e523" kind="function"><name>CmdSetDisplayName</name></member>
+  </compound>
+  <compound refid="class_pause_menu" kind="class"><name>PauseMenu</name>
+    <member refid="class_pause_menu_1a3d0a43917cf3e488852b47d1b755b377" kind="variable"><name>isPaused</name></member>
+    <member refid="class_pause_menu_1a2a4732fd962c6aa136a867be16b71cc2" kind="variable"><name>pauseMenu</name></member>
+    <member refid="class_pause_menu_1aaf5cb57fe57c8501b3f38b2f90660bfd" kind="variable"><name>SettingsMenu</name></member>
+    <member refid="class_pause_menu_1af3f712a6657ce4e63934b46cfde2b540" kind="variable"><name>settings</name></member>
+    <member refid="class_pause_menu_1a91fac20bd1043f4b2be52fdc2c72841d" kind="variable"><name>playerControls</name></member>
+    <member refid="class_pause_menu_1a99890cfcab30f2109151d70147ee03aa" kind="property"><name>PlayerControls</name></member>
+    <member refid="class_pause_menu_1ad66a0552c131257182ce524f1c71ce4c" kind="function"><name>Update</name></member>
+    <member refid="class_pause_menu_1ab0b87e2570ae941ca998a6000747b8e2" kind="function"><name>TogglePause</name></member>
+  </compound>
+  <compound refid="class_player" kind="class"><name>Player</name>
+    <member refid="class_player_1a1cfe1922b69ef45ba80ae13f012d1ab9" kind="variable"><name>playersTeamID</name></member>
+    <member refid="class_player_1abb85bb953194e45a233387defc2bcaa2" kind="variable"><name>currentWeapon</name></member>
+    <member refid="class_player_1a30a9976db37dc7be8f5be2b968179e2d" kind="variable"><name>lastWeapon</name></member>
+    <member refid="class_player_1a2ca0d5eedf3b254513a041d50c13873c" kind="property"><name>teamID</name></member>
+    <member refid="class_player_1aff08b341c76fb1c361d87556dc552975" kind="variable"><name>Instance</name></member>
+    <member refid="class_player_1a55f612de4bf737e76d0737f6be28959c" kind="variable"><name>weapons</name></member>
+    <member refid="class_player_1a264f3a095963a5b165268f12c2127ef1" kind="variable"><name>forwardDropOffset</name></member>
+    <member refid="class_player_1acd19c4f30931ba2b019d4c5c502d0609" kind="variable"><name>upDropOffset</name></member>
+    <member refid="class_player_1a18c91668a6d6ef178eb5549ff32b6795" kind="function"><name>OnStartAuthority</name></member>
+    <member refid="class_player_1a2f273a6861204565dbb82548af33fb6a" kind="function"><name>PickUpWeapon</name></member>
+    <member refid="class_player_1a2f401ec967dd0b69552bdffe7c385f25" kind="function"><name>SwitchWeapon</name></member>
+    <member refid="class_player_1a0bf3b6faabf83cb2946b4f9b31fd033a" kind="function"><name>DropWeapon</name></member>
+    <member refid="class_player_1aa4572382376673761dff583ab1a92702" kind="function"><name>ReturnWeapon</name></member>
+    <member refid="class_player_1ad27855b891d165f1df6e9496a644a837" kind="function"><name>IsHoldingFlag</name></member>
+    <member refid="class_player_1a0611fe09c9c5e566b3e44e700088e1c2" kind="function"><name>GetWeaponTeamID</name></member>
+    <member refid="class_player_1aace80372e18e32fe177e295fe5d93ba8" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="struct_controls_1_1_player_actions" kind="struct"><name>Controls::PlayerActions</name>
+    <member refid="struct_controls_1_1_player_actions_1a61f69bc455e77683ac3983e1e82eba31" kind="variable"><name>m_Wrapper</name></member>
+    <member refid="struct_controls_1_1_player_actions_1a00c05daef97604bc11ee22f1fd338bff" kind="variable"><name>Look</name></member>
+    <member refid="struct_controls_1_1_player_actions_1a3cec57011a767253cfa5060ef4ef9678" kind="variable"><name>Move</name></member>
+    <member refid="struct_controls_1_1_player_actions_1a9f11e3de01e04ccec674609dcbdab7ab" kind="variable"><name>Pause</name></member>
+    <member refid="struct_controls_1_1_player_actions_1a010f55afe5b8f4c80491990924ffe60f" kind="variable"><name>Fire</name></member>
+    <member refid="struct_controls_1_1_player_actions_1a07e20288c7ac949cdfbdb5ff2159d5d6" kind="variable"><name>Reload</name></member>
+    <member refid="struct_controls_1_1_player_actions_1ab05b1ab79e087ba15222171adcab3fdb" kind="variable"><name>enabled</name></member>
+    <member refid="struct_controls_1_1_player_actions_1af9a50c29b516e55ca953339cc2db9fc4" kind="function"><name>PlayerActions</name></member>
+    <member refid="struct_controls_1_1_player_actions_1aef38186f8445f172ca011d139d4a99a7" kind="function"><name>Get</name></member>
+    <member refid="struct_controls_1_1_player_actions_1a56abe0f3a6e64ab5f458e8d441b869d6" kind="function"><name>Enable</name></member>
+    <member refid="struct_controls_1_1_player_actions_1ab3abe8c648468ad2c2b9dd9767490b99" kind="function"><name>Disable</name></member>
+    <member refid="struct_controls_1_1_player_actions_1a011aadec6501418214c55e5f3b3d581f" kind="function"><name>SetCallbacks</name></member>
+    <member refid="struct_controls_1_1_player_actions_1abcbb4fc2a27f5f40791415d3cfb64288" kind="function"><name>operator InputActionMap</name></member>
+  </compound>
+  <compound refid="class_player_camera_controller" kind="class"><name>PlayerCameraController</name>
+    <member refid="class_player_camera_controller_1a23b27bdf792ef9a0871d48c08bdbf72d" kind="variable"><name>maxFollowOffset</name></member>
+    <member refid="class_player_camera_controller_1aa0cc1fadfd4e93f7077e7a60cb842101" kind="variable"><name>cameraVelocity</name></member>
+    <member refid="class_player_camera_controller_1a3e239a2ed2fc710bc6218e595fef7f2f" kind="variable"><name>playerTransform</name></member>
+    <member refid="class_player_camera_controller_1a41a3ad7847b601be6f200ee8fe732293" kind="variable"><name>virtualCamera</name></member>
+    <member refid="class_player_camera_controller_1af6f8fd3e5e688f14d0f6395573cc0652" kind="variable"><name>playerControls</name></member>
+    <member refid="class_player_camera_controller_1a0c481fb027354f6edabd5f78a3e279d9" kind="variable"><name>transposer</name></member>
+    <member refid="class_player_camera_controller_1a59774d697f6b3d21be6eb228eb5b7768" kind="property"><name>PlayerControls</name></member>
+    <member refid="class_player_camera_controller_1a9f4a52637ffd865e33ef93223d7c5d9f" kind="function"><name>OnStartAuthority</name></member>
+    <member refid="class_player_camera_controller_1a7d35e775e77f04ffb0e7b54be9be52e9" kind="function"><name>OnEnable</name></member>
+    <member refid="class_player_camera_controller_1a02a3567dfd8669cd0566c6a65d115003" kind="function"><name>OnDisable</name></member>
+    <member refid="class_player_camera_controller_1a77530b6f8e43a212d5d8da0a13ad7bea" kind="function"><name>Look</name></member>
+  </compound>
+  <compound refid="class_player_movement_controller" kind="class"><name>PlayerMovementController</name>
+    <member refid="class_player_movement_controller_1aebb22fd0a2d9a464d8e07e7bec69ac8b" kind="variable"><name>movementSpeed</name></member>
+    <member refid="class_player_movement_controller_1adeaa4e8c0a9c4339f52b74d12f80f130" kind="variable"><name>controller</name></member>
+    <member refid="class_player_movement_controller_1a37cda0830de686c915d66dd5b5c4aedc" kind="variable"><name>previousInput</name></member>
+    <member refid="class_player_movement_controller_1a77e9d7cace63b19392c203230c1c367a" kind="variable"><name>playerControls</name></member>
+    <member refid="class_player_movement_controller_1a185980c8ab4a2a679f35e31bc4414681" kind="property"><name>PlayerControls</name></member>
+    <member refid="class_player_movement_controller_1ae4816af89e84665175117df51c1c748f" kind="function"><name>OnStartAuthority</name></member>
+    <member refid="class_player_movement_controller_1abc22f01102295b0946a8ea3d082e6c90" kind="function"><name>OnEnable</name></member>
+    <member refid="class_player_movement_controller_1ab7eabf44589720175f80e7b34c819b88" kind="function"><name>OnDisable</name></member>
+    <member refid="class_player_movement_controller_1ae5fe1e8776604ded63eb25e191d5fe7b" kind="function"><name>Update</name></member>
+    <member refid="class_player_movement_controller_1ab05260e2dd627a667e233dd03468fc2d" kind="function"><name>SetMovement</name></member>
+    <member refid="class_player_movement_controller_1ad6e0319db69d80879809a63e3545bee0" kind="function"><name>ResetMovement</name></member>
+    <member refid="class_player_movement_controller_1a2fc6ecd7c77efe1766bac1ddbb3fd113" kind="function"><name>Move</name></member>
+  </compound>
+  <compound refid="class_player_name_input" kind="class"><name>PlayerNameInput</name>
+    <member refid="class_player_name_input_1a3cd771fc910d11b7269dbb6d793fd9a0" kind="variable"><name>nameInputField</name></member>
+    <member refid="class_player_name_input_1a661e6bf72ead0d6af6ca28b0ed1843a9" kind="variable"><name>continueButton</name></member>
+    <member refid="class_player_name_input_1a39d700abe143b7882871532aa1a053bf" kind="variable"><name>PlayerPrefsNameKey</name></member>
+    <member refid="class_player_name_input_1a9dc63e87a8b421532046312e6f2431f3" kind="property"><name>DisplayName</name></member>
+    <member refid="class_player_name_input_1a2312338b727f0eb1a8ba5f9caacaf0f8" kind="function"><name>Start</name></member>
+    <member refid="class_player_name_input_1a4027ec15625188f133f6726fe1944ab6" kind="function"><name>SetUpInputField</name></member>
+    <member refid="class_player_name_input_1abbe8f9799656ecf494ba17be4c480a8d" kind="function"><name>SetPlayerName</name></member>
+    <member refid="class_player_name_input_1aabe1ec32126c3c87ef6594cb4659c704" kind="function"><name>SavePlayerName</name></member>
+  </compound>
+  <compound refid="class_player_spawn_point" kind="class"><name>PlayerSpawnPoint</name>
+    <member refid="class_player_spawn_point_1a6583e644b2828dadbe1c01d985156d5c" kind="function"><name>Awake</name></member>
+    <member refid="class_player_spawn_point_1a0bb9205dfa3ed417c74e342c910e747a" kind="function"><name>OnDestroy</name></member>
+    <member refid="class_player_spawn_point_1af3d506299d76a546c54b54132a229204" kind="function"><name>OnDrawGizmos</name></member>
+  </compound>
+  <compound refid="class_player_spawn_system" kind="class"><name>PlayerSpawnSystem</name>
+    <member refid="class_player_spawn_system_1a474a6ac23fa20ae794622636485cde18" kind="variable"><name>playerPrefab</name></member>
+    <member refid="class_player_spawn_system_1aff433d840e2bc30348d121e54bdeff00" kind="variable"><name>nextIndex</name></member>
+    <member refid="class_player_spawn_system_1a896f085ab8f7d789245c75abc1700497" kind="variable"><name>spawnPoints</name></member>
+    <member refid="class_player_spawn_system_1a0958c49aaf427b539a423bd04b87a758" kind="function"><name>AddSpawnPoint</name></member>
+    <member refid="class_player_spawn_system_1a00bff415d714deb868aaa147cc510213" kind="function"><name>RemoveSpawnPoint</name></member>
+    <member refid="class_player_spawn_system_1aab62328e988b7780013a16700cd2aea5" kind="function"><name>OnStartServer</name></member>
+    <member refid="class_player_spawn_system_1aafe7a2d26a6760b0f6e542d3030b30f0" kind="function"><name>SpawnPlayer</name></member>
+    <member refid="class_player_spawn_system_1ae260ce94a768a35dc179dc8c97ad84a0" kind="function"><name>OnDestroy</name></member>
+  </compound>
+  <compound refid="class_settings" kind="class"><name>Settings</name>
+    <member refid="class_settings_1aa256d72d90e8ea25309c54ce5890c95f" kind="variable"><name>resolutionDropdown</name></member>
+    <member refid="class_settings_1aeda99665669ee8bd0101ffced5cfc5a5" kind="variable"><name>quailtyDropdown</name></member>
+    <member refid="class_settings_1a06f887e4f171bf7449e15da2111fa660" kind="variable"><name>volumeSlider</name></member>
+    <member refid="class_settings_1aded97d0b42a33f64fd68b72951501c19" kind="variable"><name>audioMixer</name></member>
+    <member refid="class_settings_1a7e268fc8c66316d42070a8417c92d45b" kind="variable"><name>volume</name></member>
+    <member refid="class_settings_1a722a488db5053ea19ec61e6666142579" kind="variable"><name>resolutions</name></member>
+    <member refid="class_settings_1a391d96f3dbdf828df1ed7dd2cd4b70fa" kind="function"><name>Start</name></member>
+    <member refid="class_settings_1af64bfc78fd33803322b0e6181a805bd7" kind="function"><name>Load</name></member>
+    <member refid="class_settings_1ae5b00b8649c4e746625fcf3d9c761d84" kind="function"><name>Save</name></member>
+    <member refid="class_settings_1a3bc26e9bb5c31f9e2916a570a0a030b6" kind="function"><name>SetVolume</name></member>
+    <member refid="class_settings_1a01d05ae912e4b8a7b803eebccf432488" kind="function"><name>SetFullscreen</name></member>
+    <member refid="class_settings_1a1c919612dbd8470d1b09eaca77783de5" kind="function"><name>SetQuailty</name></member>
+    <member refid="class_settings_1aee158902e23fa0f25b26e42f423eddcc" kind="function"><name>SetResolution</name></member>
+  </compound>
+  <compound refid="class_settings_binary" kind="class"><name>SettingsBinary</name>
+    <member refid="class_settings_binary_1aef30b5a310b51125cf8531a9121ea190" kind="function"><name>SaveSettingData</name></member>
+    <member refid="class_settings_binary_1aa0b86b994e8074fcb812d2ba564231d1" kind="function"><name>LoadSettingsData</name></member>
+  </compound>
+  <compound refid="class_settings_data" kind="class"><name>SettingsData</name>
+    <member refid="class_settings_data_1a8a543496045478caee78ba188e4f44d7" kind="variable"><name>quailtyIndex</name></member>
+    <member refid="class_settings_data_1a603ff8b50883c809867a1f6b913eff08" kind="variable"><name>resolutionIndex</name></member>
+    <member refid="class_settings_data_1a36c85139eaad87b17659f9d5597f1393" kind="variable"><name>soundLevel</name></member>
+    <member refid="class_settings_data_1a598f144f0136672d433b7c2ad882d6d3" kind="variable"><name>forward</name></member>
+    <member refid="class_settings_data_1a7cadabd3095b8d6773c2a7b962f6790b" kind="variable"><name>backward</name></member>
+    <member refid="class_settings_data_1aa2efe8bee0a7b7f7840c6dd68fa560bf" kind="variable"><name>left</name></member>
+    <member refid="class_settings_data_1a2bf8c3e4dc6a9aa1abcdbddf2b7b5ee3" kind="variable"><name>right</name></member>
+    <member refid="class_settings_data_1ae729ccb4daf4c9b03ec93e9dd39fe2ef" kind="variable"><name>inventory</name></member>
+    <member refid="class_settings_data_1aa11b3e57e058d8b2268f02241a80c286" kind="variable"><name>interact</name></member>
+    <member refid="class_settings_data_1a9f0ef296b2faee236bb185220c7511d0" kind="variable"><name>jump</name></member>
+    <member refid="class_settings_data_1a4e1c375d0b7a738889bcf3a70be2c37e" kind="function"><name>SettingsData</name></member>
+  </compound>
+  <compound refid="class_team" kind="class"><name>Team</name>
+    <member refid="class_team_1abfd3ef234dc0044d8693d4e1b805636f" kind="variable"><name>score</name></member>
+  </compound>
+  <compound refid="class_weapon" kind="class"><name>Weapon</name>
+    <member refid="class_weapon_1a8119d71c4cb49f1f24867e8dd1df04db" kind="variable"><name>teamID</name></member>
+    <member refid="class_weapon_1ad1a206306cdc406ea89d1eb924cb4a66" kind="variable"><name>isWeaponLocked</name></member>
+    <member refid="class_weapon_1a71bdff2135f794e5412646cb82d55615" kind="variable"><name>isWeaponDropable</name></member>
+    <member refid="class_weapon_1a82d35807f96352f1f37728a48daee09f" kind="variable"><name>worldWeaponGameObject</name></member>
+    <member refid="class_weapon_1a897bd838a85be2c381c3e3b2032fe87f" kind="variable"><name>originalLocation</name></member>
+    <member refid="class_weapon_1a9546a24d9829ced41502f8d12c3a5a21" kind="function"><name>SetWeaponGameObject</name></member>
+    <member refid="class_weapon_1a693c6ae82480f9db5116854c856e7416" kind="function"><name>DropWeapon</name></member>
+  </compound>
+  <compound refid="namespace_cinemachine" kind="namespace"><name>Cinemachine</name>
+  </compound>
+  <compound refid="namespace_mirror" kind="namespace"><name>Mirror</name>
+  </compound>
+  <compound refid="namespace_mirror_1_1_examples_1_1_basic" kind="namespace"><name>Mirror::Examples::Basic</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_serialization_1_1_formatters_1_1_binary" kind="namespace"><name>System::Runtime::Serialization::Formatters::Binary</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml_1_1_serialization" kind="namespace"><name>System::Xml::Serialization</name>
+  </compound>
+  <compound refid="namespace_t_m_pro" kind="namespace"><name>TMPro</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_audio" kind="namespace"><name>UnityEngine::Audio</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_experimental_1_1_x_r" kind="namespace"><name>UnityEngine::Experimental::XR</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_input_system" kind="namespace"><name>UnityEngine::InputSystem</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_input_system_1_1_utilities" kind="namespace"><name>UnityEngine::InputSystem::Utilities</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_scene_management" kind="namespace"><name>UnityEngine::SceneManagement</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
+  </compound>
+  <compound refid="_capture_zone_8cs" kind="file"><name>CaptureZone.cs</name>
+  </compound>
+  <compound refid="_flag_8cs" kind="file"><name>Flag.cs</name>
+  </compound>
+  <compound refid="_game_manager_8cs" kind="file"><name>GameManager.cs</name>
+  </compound>
+  <compound refid="_game_mode_8cs" kind="file"><name>GameMode.cs</name>
+  </compound>
+  <compound refid="_game_mode_c_t_f_8cs" kind="file"><name>GameModeCTF.cs</name>
+  </compound>
+  <compound refid="_controls_8cs" kind="file"><name>Controls.cs</name>
+  </compound>
+  <compound refid="_main_menu_8cs" kind="file"><name>MainMenu.cs</name>
+  </compound>
+  <compound refid="_join_lobby_menu_8cs" kind="file"><name>JoinLobbyMenu.cs</name>
+  </compound>
+  <compound refid="_networked_player_8cs" kind="file"><name>NetworkedPlayer.cs</name>
+  </compound>
+  <compound refid="_network_game_player_8cs" kind="file"><name>NetworkGamePlayer.cs</name>
+  </compound>
+  <compound refid="_network_manager_lobby_8cs" kind="file"><name>NetworkManagerLobby.cs</name>
+  </compound>
+  <compound refid="_network_room_player_8cs" kind="file"><name>NetworkRoomPlayer.cs</name>
+  </compound>
+  <compound refid="_pause_menu_8cs" kind="file"><name>PauseMenu.cs</name>
+  </compound>
+  <compound refid="_player_8cs" kind="file"><name>Player.cs</name>
+  </compound>
+  <compound refid="_player_camera_controller_8cs" kind="file"><name>PlayerCameraController.cs</name>
+  </compound>
+  <compound refid="_player_movement_controller_8cs" kind="file"><name>PlayerMovementController.cs</name>
+  </compound>
+  <compound refid="_player_name_input_8cs" kind="file"><name>PlayerNameInput.cs</name>
+  </compound>
+  <compound refid="_player_spawn_point_8cs" kind="file"><name>PlayerSpawnPoint.cs</name>
+  </compound>
+  <compound refid="_player_spawn_system_8cs" kind="file"><name>PlayerSpawnSystem.cs</name>
+  </compound>
+  <compound refid="_settings_8cs" kind="file"><name>Settings.cs</name>
+  </compound>
+  <compound refid="_settings_binary_8cs" kind="file"><name>SettingsBinary.cs</name>
+  </compound>
+  <compound refid="_settings_data_8cs" kind="file"><name>SettingsData.cs</name>
+  </compound>
+  <compound refid="_weapon_8cs" kind="file"><name>Weapon.cs</name>
+  </compound>
+  <compound refid="dir_84bbf7b3c7f28a5a18725745e1505219" kind="dir"><name>Assets</name>
+  </compound>
+  <compound refid="dir_82bf5dcf5f07f0970851629866abc1ad" kind="dir"><name>Assets/Scripts/Input</name>
+  </compound>
+  <compound refid="dir_efed5bf1f15259d309d2da632966cad0" kind="dir"><name>Assets/Scripts/Network</name>
+  </compound>
+  <compound refid="dir_c7fafc839a0585736011c21bdabf2a37" kind="dir"><name>Assets/Scripts/Player</name>
+  </compound>
+  <compound refid="dir_f13b41af88cf68434578284aaf699e39" kind="dir"><name>Assets/Scripts</name>
+  </compound>
+</doxygenindex>

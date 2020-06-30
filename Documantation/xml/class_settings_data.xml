@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_settings_data" kind="class" language="C#" prot="public">
+    <compoundname>SettingsData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_settings_data_1a8a543496045478caee78ba188e4f44d7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SettingsData.quailtyIndex</definition>
+        <argsstring></argsstring>
+        <name>quailtyIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="4" column="16" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_data_1a603ff8b50883c809867a1f6b913eff08" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SettingsData.resolutionIndex</definition>
+        <argsstring></argsstring>
+        <name>resolutionIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="5" column="16" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_data_1a36c85139eaad87b17659f9d5597f1393" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SettingsData.soundLevel</definition>
+        <argsstring></argsstring>
+        <name>soundLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="6" column="18" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_data_1a598f144f0136672d433b7c2ad882d6d3" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SettingsData.forward</definition>
+        <argsstring></argsstring>
+        <name>forward</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="7" column="19" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_settings_data_1a7cadabd3095b8d6773c2a7b962f6790b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SettingsData.backward</definition>
+        <argsstring></argsstring>
+        <name>backward</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="7" column="27" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_data_1aa2efe8bee0a7b7f7840c6dd68fa560bf" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SettingsData.left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="7" column="36" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_data_1a2bf8c3e4dc6a9aa1abcdbddf2b7b5ee3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SettingsData.right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="7" column="41" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_data_1ae729ccb4daf4c9b03ec93e9dd39fe2ef" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SettingsData.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="7" column="47" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_data_1aa11b3e57e058d8b2268f02241a80c286" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SettingsData.interact</definition>
+        <argsstring></argsstring>
+        <name>interact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="7" column="57" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_data_1a9f0ef296b2faee236bb185220c7511d0" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SettingsData.jump</definition>
+        <argsstring></argsstring>
+        <name>jump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="7" column="66" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_settings_data_1a4e1c375d0b7a738889bcf3a70be2c37e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SettingsData.SettingsData</definition>
+        <argsstring>(Settings settings)</argsstring>
+        <name>SettingsData</name>
+        <param>
+          <type><ref refid="class_settings" kindref="compound">Settings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/SettingsData.cs" line="9" column="12" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="9" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Scripts/SettingsData.cs" line="2" column="7" bodyfile="Assets/Scripts/SettingsData.cs" bodystart="3" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_settings_data_1a7cadabd3095b8d6773c2a7b962f6790b" prot="private" virt="non-virtual"><scope>SettingsData</scope><name>backward</name></member>
+      <member refid="class_settings_data_1a598f144f0136672d433b7c2ad882d6d3" prot="public" virt="non-virtual"><scope>SettingsData</scope><name>forward</name></member>
+      <member refid="class_settings_data_1aa11b3e57e058d8b2268f02241a80c286" prot="private" virt="non-virtual"><scope>SettingsData</scope><name>interact</name></member>
+      <member refid="class_settings_data_1ae729ccb4daf4c9b03ec93e9dd39fe2ef" prot="private" virt="non-virtual"><scope>SettingsData</scope><name>inventory</name></member>
+      <member refid="class_settings_data_1a9f0ef296b2faee236bb185220c7511d0" prot="private" virt="non-virtual"><scope>SettingsData</scope><name>jump</name></member>
+      <member refid="class_settings_data_1aa2efe8bee0a7b7f7840c6dd68fa560bf" prot="private" virt="non-virtual"><scope>SettingsData</scope><name>left</name></member>
+      <member refid="class_settings_data_1a8a543496045478caee78ba188e4f44d7" prot="public" virt="non-virtual"><scope>SettingsData</scope><name>quailtyIndex</name></member>
+      <member refid="class_settings_data_1a603ff8b50883c809867a1f6b913eff08" prot="public" virt="non-virtual"><scope>SettingsData</scope><name>resolutionIndex</name></member>
+      <member refid="class_settings_data_1a2bf8c3e4dc6a9aa1abcdbddf2b7b5ee3" prot="private" virt="non-virtual"><scope>SettingsData</scope><name>right</name></member>
+      <member refid="class_settings_data_1a4e1c375d0b7a738889bcf3a70be2c37e" prot="public" virt="non-virtual"><scope>SettingsData</scope><name>SettingsData</name></member>
+      <member refid="class_settings_data_1a36c85139eaad87b17659f9d5597f1393" prot="public" virt="non-virtual"><scope>SettingsData</scope><name>soundLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

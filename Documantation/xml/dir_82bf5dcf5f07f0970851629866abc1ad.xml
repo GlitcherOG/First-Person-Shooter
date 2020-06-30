@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_82bf5dcf5f07f0970851629866abc1ad" kind="dir">
+    <compoundname>Assets/Scripts/Input</compoundname>
+    <innerfile refid="_controls_8cs">Controls.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Scripts/Input/"/>
+  </compounddef>
+</doxygen>

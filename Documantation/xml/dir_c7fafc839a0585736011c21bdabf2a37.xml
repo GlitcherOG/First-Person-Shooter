@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_c7fafc839a0585736011c21bdabf2a37" kind="dir">
+    <compoundname>Assets/Scripts/Player</compoundname>
+    <innerfile refid="_player_8cs">Player.cs</innerfile>
+    <innerfile refid="_player_camera_controller_8cs">PlayerCameraController.cs</innerfile>
+    <innerfile refid="_player_movement_controller_8cs">PlayerMovementController.cs</innerfile>
+    <innerfile refid="_player_name_input_8cs">PlayerNameInput.cs</innerfile>
+    <innerfile refid="_player_spawn_point_8cs">PlayerSpawnPoint.cs</innerfile>
+    <innerfile refid="_player_spawn_system_8cs">PlayerSpawnSystem.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Scripts/Player/"/>
+  </compounddef>
+</doxygen>

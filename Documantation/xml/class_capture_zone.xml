@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_capture_zone" kind="class" language="C#" prot="public">
+    <compoundname>CaptureZone</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_capture_zone_1a1294dd07787e0762a99e53bd1638e71e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CaptureZone.teamID</definition>
+        <argsstring></argsstring>
+        <name>teamID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/CaptureZone.cs" line="7" column="10" bodyfile="Assets/Scripts/CaptureZone.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_capture_zone_1a640194681ec25ea153f22f648deedbf3" prot="private" static="no" mutable="no">
+        <type><ref refid="class_game_mode_c_t_f" kindref="compound">GameModeCTF</ref></type>
+        <definition>GameModeCTF CaptureZone.gameModeCTF</definition>
+        <argsstring></argsstring>
+        <name>gameModeCTF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/CaptureZone.cs" line="9" column="17" bodyfile="Assets/Scripts/CaptureZone.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_capture_zone_1a5a7db0e2c2eb959022efd5dff8afffbc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CaptureZone.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/CaptureZone.cs" line="10" column="18" bodyfile="Assets/Scripts/CaptureZone.cs" bodystart="10" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_capture_zone_1ac222b9cc1c1581b48ed3e1400c0670a5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CaptureZone.OnTriggerEnter</definition>
+        <argsstring>(Collider other)</argsstring>
+        <name>OnTriggerEnter</name>
+        <param>
+          <type>Collider</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/CaptureZone.cs" line="20" column="18" bodyfile="Assets/Scripts/CaptureZone.cs" bodystart="20" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>CaptureZone</label>
+        <link refid="class_capture_zone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>CaptureZone</label>
+        <link refid="class_capture_zone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/CaptureZone.cs" line="5" column="7" bodyfile="Assets/Scripts/CaptureZone.cs" bodystart="6" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_capture_zone_1a640194681ec25ea153f22f648deedbf3" prot="private" virt="non-virtual"><scope>CaptureZone</scope><name>gameModeCTF</name></member>
+      <member refid="class_capture_zone_1ac222b9cc1c1581b48ed3e1400c0670a5" prot="private" virt="non-virtual"><scope>CaptureZone</scope><name>OnTriggerEnter</name></member>
+      <member refid="class_capture_zone_1a5a7db0e2c2eb959022efd5dff8afffbc" prot="private" virt="non-virtual"><scope>CaptureZone</scope><name>Start</name></member>
+      <member refid="class_capture_zone_1a1294dd07787e0762a99e53bd1638e71e" prot="private" virt="non-virtual"><scope>CaptureZone</scope><name>teamID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

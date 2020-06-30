@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_player_name_input" kind="class" language="C#" prot="public">
+    <compoundname>PlayerNameInput</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_name_input_1a3cd771fc910d11b7269dbb6d793fd9a0" prot="private" static="no" mutable="no">
+        <type>TMP_InputField</type>
+        <definition>TMP_InputField PlayerNameInput.nameInputField</definition>
+        <argsstring></argsstring>
+        <name>nameInputField</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerNameInput.cs" line="10" column="29" bodyfile="Assets/Scripts/Player/PlayerNameInput.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_name_input_1a661e6bf72ead0d6af6ca28b0ed1843a9" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button PlayerNameInput.continueButton</definition>
+        <argsstring></argsstring>
+        <name>continueButton</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerNameInput.cs" line="11" column="21" bodyfile="Assets/Scripts/Player/PlayerNameInput.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_name_input_1a39d700abe143b7882871532aa1a053bf" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PlayerNameInput.PlayerPrefsNameKey</definition>
+        <argsstring></argsstring>
+        <name>PlayerPrefsNameKey</name>
+        <initializer>= &quot;PlayerName&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerNameInput.cs" line="16" column="20" bodyfile="Assets/Scripts/Player/PlayerNameInput.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_player_name_input_1a9dc63e87a8b421532046312e6f2431f3" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string PlayerNameInput.DisplayName</definition>
+        <argsstring></argsstring>
+        <name>DisplayName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerNameInput.cs" line="14" column="26" bodyfile="Assets/Scripts/Player/PlayerNameInput.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_name_input_1a2312338b727f0eb1a8ba5f9caacaf0f8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerNameInput.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerNameInput.cs" line="18" column="18" bodyfile="Assets/Scripts/Player/PlayerNameInput.cs" bodystart="18" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_name_input_1a4027ec15625188f133f6726fe1944ab6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerNameInput.SetUpInputField</definition>
+        <argsstring>()</argsstring>
+        <name>SetUpInputField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerNameInput.cs" line="32" column="18" bodyfile="Assets/Scripts/Player/PlayerNameInput.cs" bodystart="32" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_name_input_1abbe8f9799656ecf494ba17be4c480a8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerNameInput.SetPlayerName</definition>
+        <argsstring>(string name)</argsstring>
+        <name>SetPlayerName</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerNameInput.cs" line="47" column="17" bodyfile="Assets/Scripts/Player/PlayerNameInput.cs" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_name_input_1aabe1ec32126c3c87ef6594cb4659c704" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerNameInput.SavePlayerName</definition>
+        <argsstring>()</argsstring>
+        <name>SavePlayerName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player/PlayerNameInput.cs" line="52" column="17" bodyfile="Assets/Scripts/Player/PlayerNameInput.cs" bodystart="52" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PlayerNameInput</label>
+        <link refid="class_player_name_input"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>PlayerNameInput</label>
+        <link refid="class_player_name_input"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Player/PlayerNameInput.cs" line="7" column="7" bodyfile="Assets/Scripts/Player/PlayerNameInput.cs" bodystart="8" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_player_name_input_1a661e6bf72ead0d6af6ca28b0ed1843a9" prot="private" virt="non-virtual"><scope>PlayerNameInput</scope><name>continueButton</name></member>
+      <member refid="class_player_name_input_1a9dc63e87a8b421532046312e6f2431f3" prot="public" virt="non-virtual"><scope>PlayerNameInput</scope><name>DisplayName</name></member>
+      <member refid="class_player_name_input_1a3cd771fc910d11b7269dbb6d793fd9a0" prot="private" virt="non-virtual"><scope>PlayerNameInput</scope><name>nameInputField</name></member>
+      <member refid="class_player_name_input_1a39d700abe143b7882871532aa1a053bf" prot="private" virt="non-virtual"><scope>PlayerNameInput</scope><name>PlayerPrefsNameKey</name></member>
+      <member refid="class_player_name_input_1aabe1ec32126c3c87ef6594cb4659c704" prot="public" virt="non-virtual"><scope>PlayerNameInput</scope><name>SavePlayerName</name></member>
+      <member refid="class_player_name_input_1abbe8f9799656ecf494ba17be4c480a8d" prot="public" virt="non-virtual"><scope>PlayerNameInput</scope><name>SetPlayerName</name></member>
+      <member refid="class_player_name_input_1a4027ec15625188f133f6726fe1944ab6" prot="private" virt="non-virtual"><scope>PlayerNameInput</scope><name>SetUpInputField</name></member>
+      <member refid="class_player_name_input_1a2312338b727f0eb1a8ba5f9caacaf0f8" prot="private" virt="non-virtual"><scope>PlayerNameInput</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -9,14 +9,21 @@ public class PauseMenu : MonoBehaviour
     public GameObject SettingsMenu; //Settings gameobject
     public Settings settings; //Settings script
 
+    private Controls playerControls;
+
+    private Controls PlayerControls
+    {
+        get
+        {
+            if (playerControls != null) return playerControls;
+            return playerControls = new Controls();
+        }
+    }
+
     void Update()
     {
         //If input for escape key and showInv is false
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            //Toggle pause state
-            TogglePause();
-        }
+        PlayerControls.Player.Pause.performed += ctx => TogglePause();
     }
     public void TogglePause()
     {
@@ -25,7 +32,6 @@ public class PauseMenu : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked; //Locks the cursor
             Cursor.visible = false; //Hides the cursor
-            Time.timeScale = 1; //Sets the time scale
             pauseMenu.SetActive(false); //Hides the pause menu gameobject
             SettingsMenu.SetActive(false); //Hides the settings menu gameobject
             isPaused = false; //Changes the bool for being paused
@@ -34,7 +40,6 @@ public class PauseMenu : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None; //unlocks the cursor
             Cursor.visible = true; //shows the cursor
-            Time.timeScale = 0; //Sets the time scale to 0
             pauseMenu.SetActive(true); //shows the menu
             settings.Save(); //Saves the settings
             isPaused = true;//Changes the bool for being paused

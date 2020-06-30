@@ -26,7 +26,6 @@ public class Weapon : MonoBehaviour
         float distanceToDrop = Vector3.Distance(Camera.main.transform.position, dropLocation);
         Vector3 directionToDrop = (dropLocation - Camera.main.transform.position).normalized;
 
-
         //ray to drop location
         Ray rayToDropLocation = new Ray(Camera.main.transform.position, directionToDrop * distanceToDrop);
         RaycastHit raycastHit;
@@ -62,8 +61,6 @@ public class Weapon : MonoBehaviour
         }
 
         worldWeaponGameObject.transform.position = dropLocation;
-
-
 
         Rigidbody flagRigidbody = worldWeaponGameObject.GetComponent<Rigidbody>();
         if (flagRigidbody != null && player != null)

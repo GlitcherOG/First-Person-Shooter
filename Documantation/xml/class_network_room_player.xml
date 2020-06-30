@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_network_room_player" kind="class" language="C#" prot="public">
+    <compoundname>NetworkRoomPlayer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NetworkBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_network_room_player_1ac311bf56a14f104c346a4acfdbab42cf" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject NetworkRoomPlayer.lobbyUI</definition>
+        <argsstring></argsstring>
+        <name>lobbyUI</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="11" column="25" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_room_player_1a784ea2ba3f34f9ddeee7bc7d461cd897" prot="private" static="no" mutable="no">
+        <type>TMP_Text[]</type>
+        <definition>TMP_Text [] NetworkRoomPlayer.playerNameTexts</definition>
+        <argsstring></argsstring>
+        <name>playerNameTexts</name>
+        <initializer>= new TMP_Text[4]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="12" column="23" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_room_player_1a4994d9bb126fd51ea91bf1fdb0b530e9" prot="private" static="no" mutable="no">
+        <type>TMP_Text[]</type>
+        <definition>TMP_Text [] NetworkRoomPlayer.playerReadyTexts</definition>
+        <argsstring></argsstring>
+        <name>playerReadyTexts</name>
+        <initializer>= new TMP_Text[4]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="13" column="23" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_room_player_1a2e218f5a7a252ce1df25bdb8c7be6a88" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button NetworkRoomPlayer.startGameButton</definition>
+        <argsstring></argsstring>
+        <name>startGameButton</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="14" column="21" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_room_player_1a59391575d835e11e060aa3f687015306" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool NetworkRoomPlayer.isLeader</definition>
+        <argsstring></argsstring>
+        <name>isLeader</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="22" column="18" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_room_player_1ac1fc93c3faa715eaabd10ae298b1a7df" prot="private" static="no" mutable="no">
+        <type><ref refid="class_network_manager_lobby" kindref="compound">NetworkManagerLobby</ref></type>
+        <definition>NetworkManagerLobby NetworkRoomPlayer.room</definition>
+        <argsstring></argsstring>
+        <name>room</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="35" column="33" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_network_room_player_1a5e37be71ec1451f9484ab2920cf4de8b" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string NetworkRoomPlayer.DisplayName</definition>
+        <argsstring></argsstring>
+        <name>DisplayName</name>
+        <initializer>= &quot;Loading...&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="18" column="19" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_room_player_1a585bec84846e4c124dda78491633d4bf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool NetworkRoomPlayer.IsReady</definition>
+        <argsstring></argsstring>
+        <name>IsReady</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="20" column="17" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_network_room_player_1a89d70fada2f0bd206c46802796db9761" prot="public" static="no" readable="no" writable="no" gettable="no" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool NetworkRoomPlayer.IsLeader</definition>
+        <argsstring></argsstring>
+        <name>IsLeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="23" column="17" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="property" id="class_network_room_player_1a868889e14a285eaed43f43492ad60551" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_network_manager_lobby" kindref="compound">NetworkManagerLobby</ref></type>
+        <definition>NetworkManagerLobby NetworkRoomPlayer.Room</definition>
+        <argsstring></argsstring>
+        <name>Room</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="36" column="33" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="37" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_network_room_player_1aa9fc393ccb1e6b87beb1220c11ecf5ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkRoomPlayer.OnStartAuthority</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartAuthority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="49" column="26" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_room_player_1a754b3344f6a5d8139666f1fbd1af5eb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkRoomPlayer.OnStartClient</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="56" column="26" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_room_player_1a7f515ecb5d7c2d47a258d887348ad1df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void NetworkRoomPlayer.OnNetworkDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnNetworkDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="62" column="26" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="62" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_room_player_1acd831b0544de903c40cfb45173c7b227" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkRoomPlayer.HandleDisplayNameChanged</definition>
+        <argsstring>(string oldValue, string newValue)</argsstring>
+        <name>HandleDisplayNameChanged</name>
+        <param>
+          <type>string</type>
+          <declname>oldValue</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="68" column="17" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_room_player_1a2db644a408d4ec01933acfd294d5c06f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkRoomPlayer.HandleReadyStatusChanged</definition>
+        <argsstring>(bool oldValue, bool newValue)</argsstring>
+        <name>HandleReadyStatusChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>oldValue</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="73" column="17" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_room_player_1adb6767e3c17c0485e20ff0af2f5af7ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkRoomPlayer.HandleReadyToStart</definition>
+        <argsstring>(bool readyToStart)</argsstring>
+        <name>HandleReadyToStart</name>
+        <param>
+          <type>bool</type>
+          <declname>readyToStart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="109" column="17" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="109" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_room_player_1ae2ddf228787af33d7cd7986c43f3caba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkRoomPlayer.CmdReadyUp</definition>
+        <argsstring>()</argsstring>
+        <name>CmdReadyUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="126" column="17" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="126" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_room_player_1a3e51c63181d4cfe15dc3d318e5f3da05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkRoomPlayer.CmdStartGame</definition>
+        <argsstring>()</argsstring>
+        <name>CmdStartGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="134" column="17" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="134" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_network_room_player_1a91d628aad6fa2a03ee4eb13696c136b8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkRoomPlayer.UpdateDisplay</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateDisplay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="78" column="18" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="78" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_room_player_1a10443d0048994105f50d25263be5e523" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkRoomPlayer.CmdSetDisplayName</definition>
+        <argsstring>(string displayName)</argsstring>
+        <name>CmdSetDisplayName</name>
+        <param>
+          <type>string</type>
+          <declname>displayName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="120" column="18" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="120" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="1">
+        <label>NetworkRoomPlayer</label>
+        <link refid="class_network_room_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="1">
+        <label>NetworkRoomPlayer</label>
+        <link refid="class_network_room_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Network/NetworkRoomPlayer.cs" line="8" column="7" bodyfile="Assets/Scripts/Network/NetworkRoomPlayer.cs" bodystart="9" bodyend="143"/>
+    <listofallmembers>
+      <member refid="class_network_room_player_1ae2ddf228787af33d7cd7986c43f3caba" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>CmdReadyUp</name></member>
+      <member refid="class_network_room_player_1a10443d0048994105f50d25263be5e523" prot="private" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>CmdSetDisplayName</name></member>
+      <member refid="class_network_room_player_1a3e51c63181d4cfe15dc3d318e5f3da05" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>CmdStartGame</name></member>
+      <member refid="class_network_room_player_1a5e37be71ec1451f9484ab2920cf4de8b" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>DisplayName</name></member>
+      <member refid="class_network_room_player_1acd831b0544de903c40cfb45173c7b227" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>HandleDisplayNameChanged</name></member>
+      <member refid="class_network_room_player_1a2db644a408d4ec01933acfd294d5c06f" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>HandleReadyStatusChanged</name></member>
+      <member refid="class_network_room_player_1adb6767e3c17c0485e20ff0af2f5af7ed" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>HandleReadyToStart</name></member>
+      <member refid="class_network_room_player_1a89d70fada2f0bd206c46802796db9761" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>IsLeader</name></member>
+      <member refid="class_network_room_player_1a59391575d835e11e060aa3f687015306" prot="private" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>isLeader</name></member>
+      <member refid="class_network_room_player_1a585bec84846e4c124dda78491633d4bf" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>IsReady</name></member>
+      <member refid="class_network_room_player_1ac311bf56a14f104c346a4acfdbab42cf" prot="private" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>lobbyUI</name></member>
+      <member refid="class_network_room_player_1a7f515ecb5d7c2d47a258d887348ad1df" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>OnNetworkDestroy</name></member>
+      <member refid="class_network_room_player_1aa9fc393ccb1e6b87beb1220c11ecf5ce" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>OnStartAuthority</name></member>
+      <member refid="class_network_room_player_1a754b3344f6a5d8139666f1fbd1af5eb2" prot="public" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>OnStartClient</name></member>
+      <member refid="class_network_room_player_1a784ea2ba3f34f9ddeee7bc7d461cd897" prot="private" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>playerNameTexts</name></member>
+      <member refid="class_network_room_player_1a4994d9bb126fd51ea91bf1fdb0b530e9" prot="private" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>playerReadyTexts</name></member>
+      <member refid="class_network_room_player_1a868889e14a285eaed43f43492ad60551" prot="private" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>Room</name></member>
+      <member refid="class_network_room_player_1ac1fc93c3faa715eaabd10ae298b1a7df" prot="private" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>room</name></member>
+      <member refid="class_network_room_player_1a2e218f5a7a252ce1df25bdb8c7be6a88" prot="private" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>startGameButton</name></member>
+      <member refid="class_network_room_player_1a91d628aad6fa2a03ee4eb13696c136b8" prot="private" virt="non-virtual"><scope>NetworkRoomPlayer</scope><name>UpdateDisplay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_flag" kind="class" language="C#" prot="public">
+    <compoundname>Flag</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_flag_1a78ac5264128e4720f9452da3a55346a0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Flag.teamID</definition>
+        <argsstring></argsstring>
+        <name>teamID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Flag.cs" line="7" column="10" bodyfile="Assets/Scripts/Flag.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_flag_1a95a2e6a6ec14f64b522525f91f1412dc" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Flag.originalLocation</definition>
+        <argsstring></argsstring>
+        <name>originalLocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Flag.cs" line="8" column="20" bodyfile="Assets/Scripts/Flag.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_flag_1a8496bac93eb674c58bb1a3cb4458fad1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Flag.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Flag.cs" line="11" column="18" bodyfile="Assets/Scripts/Flag.cs" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_flag_1ab4bcc71abc0c9ed761c6d350e9fddd92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Flag.OnTriggerEnter</definition>
+        <argsstring>(Collider other)</argsstring>
+        <name>OnTriggerEnter</name>
+        <param>
+          <type>Collider</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Flag.cs" line="18" column="18" bodyfile="Assets/Scripts/Flag.cs" bodystart="18" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Flag</label>
+        <link refid="class_flag"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Flag</label>
+        <link refid="class_flag"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Flag.cs" line="5" column="7" bodyfile="Assets/Scripts/Flag.cs" bodystart="6" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_flag_1ab4bcc71abc0c9ed761c6d350e9fddd92" prot="private" virt="non-virtual"><scope>Flag</scope><name>OnTriggerEnter</name></member>
+      <member refid="class_flag_1a95a2e6a6ec14f64b522525f91f1412dc" prot="public" virt="non-virtual"><scope>Flag</scope><name>originalLocation</name></member>
+      <member refid="class_flag_1a8496bac93eb674c58bb1a3cb4458fad1" prot="private" virt="non-virtual"><scope>Flag</scope><name>Start</name></member>
+      <member refid="class_flag_1a78ac5264128e4720f9452da3a55346a0" prot="private" virt="non-virtual"><scope>Flag</scope><name>teamID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
