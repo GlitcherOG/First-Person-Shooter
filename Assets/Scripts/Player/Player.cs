@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
+using UnityEngine.UI;
 
 public class Player : NetworkBehaviour
 {
@@ -9,7 +10,9 @@ public class Player : NetworkBehaviour
     [SerializeField] int playersTeamID;
     public int teamID { get { return playersTeamID; } }
     public bool Flag;
+    public float health = 100;
     public static Player Instance;
+    public Text text;
     public GameObject HolderFlag;
     public GameObject flagObject;
 
@@ -24,7 +27,11 @@ public class Player : NetworkBehaviour
     [ClientCallback]
     private void Update()
     {
-
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+        text.text = health.ToString();
     }
 
     /// <summary>
@@ -37,6 +44,7 @@ public class Player : NetworkBehaviour
         if (flag == null)
         {
             flagObject.transform.parent = null;
+            flagObject.transform.position = flagObject.GetComponent<Flag>().originalLocation;
             flagObject = null;
         }
         else
@@ -47,5 +55,9 @@ public class Player : NetworkBehaviour
         }
     }
 
+    public void damage(float dam)
+    {
+        health -= dam;
+    }
 
 }

@@ -95,6 +95,7 @@ public class NetworkRoomPlayer : NetworkBehaviour
     {
         if(!hasAuthority)
         {
+            this.gameObject.SetActive(false);
             foreach(var player in Room.RoomPlayers)
             {
                 if(player.hasAuthority)
@@ -103,7 +104,6 @@ public class NetworkRoomPlayer : NetworkBehaviour
                     break;
                 }
             }
-
             return;
         }
 

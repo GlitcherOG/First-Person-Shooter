@@ -11,7 +11,6 @@ public class PlayerCameraController : NetworkBehaviour
     [SerializeField] private Vector2 maxFollowOffset = new Vector2(-1f, 6f);
     [SerializeField] private Vector2 cameraVelocity = new Vector2(4f, 0.25f);
     [SerializeField] private Transform playerTransform = null;
-    [SerializeField] private CinemachineVirtualCamera virtualCamera = null;
 
     private Controls playerControls;
     private Controls PlayerControls
@@ -22,16 +21,14 @@ public class PlayerCameraController : NetworkBehaviour
             return playerControls = new Controls();
         }
     }
-    private CinemachineTransposer transposer;
+    [SerializeField] private GameObject transposer;
 
     /// <summary>
     /// If the player owns this object
     /// </summary>
     public override void OnStartAuthority()
     {
-        transposer = virtualCamera.GetCinemachineComponent<CinemachineTransposer>();
-
-        virtualCamera.gameObject.SetActive(true);
+        transposer.gameObject.SetActive(true);
 
         enabled = true;
 
@@ -53,13 +50,8 @@ public class PlayerCameraController : NetworkBehaviour
     /// <param name="lookAxis"></param>
     private void Look(Vector2 lookAxis)
     {
-        float followOffset = Mathf.Clamp(
-            transposer.m_FollowOffset.y - (lookAxis.y * cameraVelocity.y * Time.deltaTime),
-            maxFollowOffset.x,
-            maxFollowOffset.y);
+        transposer.transform.Rotate(-lookAxis.y * Time.deltaTime, 0f, 0f);
 
-        transposer.m_FollowOffset.y = followOffset;
-
-        playerTransform.Rotate(0f, lookAxis.x * cameraVelocity.x * Time.deltaTime, 0f);
+        playerTransform.Rotate(0f, lookAxis.x * Time.deltaTime, 0f);
     }
 }

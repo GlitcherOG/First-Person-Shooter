@@ -2,14 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
-public class WeaponManager : MonoBehaviour
+public class WeaponManager : NetworkBehaviour
 {
     public int teamID;
     RaycastHit hit;
     public GameObject Main;
     public GameObject detail;
+    public Animator anim;
+    public Text text;
     public bool fire;
+    public bool main = false;
     public int mag = 10;
     public int magMax = 10;
     public float cooldown = 0.3f;
@@ -23,40 +28,52 @@ public class WeaponManager : MonoBehaviour
             return playerControls = new Controls();
         }
     }
+    public override void OnStartAuthority()
+    {
+        PlayerControls.Player.Fire.performed += ctx => Shoot();
+        PlayerControls.Player.Reload.performed += ctx => Reload();
+        main = true;
+    }
     /// <summary>
     /// Waits for inputs
     /// </summary>
     [ClientCallback]
     void Update()
     {
-        //if Fire button is pushed, fire is false and the cooldown timer is zero
-        if (!fire && cooldownTimer <= 0)
+        text.text = mag.ToString() + "/" + magMax.ToString();
+        if (main == true)
         {
-            PlayerControls.Player.Fire.performed += ctx => Shoot();
+            if (fire && cooldownTimer <= 0 && Input.GetMouseButtonDown(0)) 
+            {
+                Shoot();
+            }
+                //If the cooldown timer is less than zero
+            if (cooldownTimer > 0)
+            {
+                //Minus time.delta time from the cooldown
+                cooldownTimer -= Time.deltaTime;
+            }
+            else
+            {
+                //Fire to true
+                fire = true;
+            }
+            if (Input.GetKeyDown("r"))
+            {
+                Reload();
+            }
         }
-        //If the cooldown timer is less than zero
-        if (cooldownTimer > 0)
-        {
-            //Minus time.delta time from the cooldown
-            cooldownTimer -= Time.deltaTime;
-        }
-        else
-        {
-            //Fire to false
-            fire = false;
-        }
-        //If r is pushed down
-        PlayerControls.Player.Reload.performed += ctx => Reload();
     }
     /// <summary>
     /// Shoots the weapon across all clients
     /// </summary>
-    [Mirror.ClientRpc]
+    [Client]
     void Shoot()
     {
         //if mag is greater than zero
         if (mag > 0)
         {
+            Debug.Log("Test");
             //Minus one from the mag
             mag--;
             //Reset the cooldownTimer
@@ -78,12 +95,17 @@ public class WeaponManager : MonoBehaviour
                     //Damage the Enemy
                     hit.transform.GetComponentInParent<Enemy>().Damage(10f);
                 }
+                if (hit.transform.tag == "Player")
+                {
+                    //Damage the Enemy
+                    hit.transform.GetComponentInParent<Player>().damage(10f);
+                }
             }
 
         }
         else
         {
-            //Run void reload
+            //Empty
             Reload();
         }
     }
@@ -91,9 +113,10 @@ public class WeaponManager : MonoBehaviour
     /// <summary>
     /// Shoots the weapon across all clients
     /// </summary>
-    [Mirror.ClientRpc]
+    //[Client]
     void Reload()
     {
+        anim.SetTrigger("Reload");
         //New int add
         int add;
         //Minus active magmax from mag
