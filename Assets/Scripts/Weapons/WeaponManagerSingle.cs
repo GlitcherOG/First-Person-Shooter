@@ -16,6 +16,7 @@ public class WeaponManagerSingle : MonoBehaviour
     public bool fire;
     public int mag = 10;
     public int magMax = 10;
+    public bool aim;
     public float cooldown = 0.3f;
     public float cooldownTimer = 2f;
     private Controls playerControls;
@@ -52,9 +53,10 @@ public class WeaponManagerSingle : MonoBehaviour
         {
             Reload();
         }
-        if(Input.GetMouseButton(1))
+        if(Input.GetMouseButtonDown(1))
         {
-            anim.SetTrigger("Aim");
+            aim = !aim;
+            anim.SetBool("Aim", aim);
         }
     }
     /// <summary>
