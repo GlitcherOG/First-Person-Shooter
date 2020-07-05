@@ -20,6 +20,7 @@ public class WeaponManager : NetworkBehaviour
     public float cooldown = 0.3f;
     public float cooldownTimer = 2f;
     private Controls playerControls;
+    public bool aim;
     private Controls PlayerControls
     {
         get
@@ -61,6 +62,11 @@ public class WeaponManager : NetworkBehaviour
             if (Input.GetKeyDown("r"))
             {
                 Reload();
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                aim = !aim;
+                anim.SetBool("Aim", aim);
             }
         }
     }
