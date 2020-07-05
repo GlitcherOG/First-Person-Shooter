@@ -18,9 +18,9 @@ public class Flag : MonoBehaviour
     /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
-        Player player = other.GetComponent<Player>();
-
-        if(player != null)
+        var player = other.GetComponent<Player>();
+        var players = other.GetComponent<PlayerSingle>();
+        if (player != null)
         {//its a player
             if (player.teamID == teamID)
             {//cant pick up your own team's flag
@@ -33,6 +33,19 @@ public class Flag : MonoBehaviour
 
             player.IsHoldingFlag(this.gameObject);
 
+        }
+        else if(players != null)
+        {
+            if (players.teamID == teamID)
+            {//cant pick up your own team's flag
+
+                //return flag
+                return;
+            }
+
+            Debug.Log("Capture Flag");
+
+            players.IsHoldingFlag(this.gameObject);
         }
     }
 }

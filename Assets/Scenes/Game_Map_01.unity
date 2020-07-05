@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 373915429}
   - component: {fileID: 373915428}
   - component: {fileID: 373915431}
+  - component: {fileID: 373915432}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -393,6 +394,21 @@ MonoBehaviour:
   pauseMenu: {fileID: 1981084434}
   SettingsMenu: {fileID: 1081406315}
   settings: {fileID: 1981084435}
+--- !u!114 &373915432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373915427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfcde4f0a3d1ece4d9432b9c788bc035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamAmmount: 2
+  teams: []
+  spawnPoints: []
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

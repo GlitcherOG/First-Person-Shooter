@@ -6,8 +6,7 @@ public class GameMode : MonoBehaviour
 {
     //set up
     public int teamAmmount = 2;
-
-
+    public static GameMode Instance;
     public List<Team> teams;
     public List<Transform> spawnPoints;
 
@@ -16,6 +15,7 @@ public class GameMode : MonoBehaviour
     /// </summary>
     protected void Start()
     {
+        Instance = this;
         Debug.Log("Setting up game");
         SetUpGame();
     }

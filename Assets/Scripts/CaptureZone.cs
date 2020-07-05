@@ -6,14 +6,14 @@ public class CaptureZone : MonoBehaviour
 {
     [SerializeField] int teamID;
 
-    GameModeCTF gameModeCTF;
+    public GameModeCTF gameModeCTF;
 
     /// <summary>
     /// Runs at the start of the game
     /// </summary>
     private void Start()
     {
-        gameModeCTF = FindObjectOfType<GameModeCTF>();
+        gameModeCTF = GameModeCTF.Instance;
 
         if (gameModeCTF == null)
         {
@@ -27,8 +27,9 @@ public class CaptureZone : MonoBehaviour
     /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Test");
         Player player = other.GetComponent<Player>();
-
+        PlayerSingle players = other.GetComponent<PlayerSingle>();
         if (player != null && gameModeCTF != null)
         {
             if (player.teamID != teamID)
@@ -40,6 +41,19 @@ public class CaptureZone : MonoBehaviour
             {
                 gameModeCTF.AddScore(player.teamID, 1);
                 player.IsHoldingFlag();
+            }
+        }
+        else if(players != null && gameModeCTF != null)
+        {
+            if (players.teamID != teamID)
+            {
+                return;
+            }
+
+            if (players.Flag)
+            {
+                gameModeCTF.AddScore(players.teamID, 1);
+                players.IsHoldingFlag();
             }
         }
     }
